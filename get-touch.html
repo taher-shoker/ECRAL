@@ -249,10 +249,10 @@
       </div>
     </footer>
     <!-- End Footer-->
-    <!-- Start Menu Modal -->
+     <!-- Start Menu Modal -->
     <!-- Modal -->
     <div
-      class="modal fade menu-comprased"
+      class="modal fade menu-comprased main-menu"
       id="menu-box"
       data-backdrop="static"
       data-keyboard="false"
@@ -341,7 +341,7 @@
       </div>
     </div>
     <!--End Menu Modal-->
-    <!-- Start SignUp Modal -->
+    <!-- Start SignIn Modal -->
     <div
       class="modal fade menu-comprased"
       id="signIn"
@@ -420,12 +420,240 @@
                         </button>
                         <hr />
                         <p>Don't Have an Account?</p>
-                        <a href="#">sign up</a>
+                        <a href="#" id="signUPForm">sign up</a>
                       </div>
                     </div>
                     <div class="offset-lg-2 col-lg-6">
                       <div class="sign-img">
                         <img src="./imgs/signIn-bg.png" alt="sing up image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start SignUp Modal -->
+    <div
+      class="modal fade menu-comprased"
+      id="signUp"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section class="sign-in p-x-165">
+              <div class="container-fluid">
+                <div class="sign-in-content">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <h2 class="form-title">Sign in</h2>
+                      <section class="wizard-content wizard-sign-up ">
+                        <div class="container">
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-md-12">
+                              <div class="wizard ">
+                                <div class="wizard-inner ">
+                                  <div class="connecting-line custom-three"></div>
+                                  <ul class="nav nav-tabs three-tabs" role="tablist">
+                                    <li role="presentation" class="disabled active">
+                                      <a
+                                        href="#step1"
+                                        data-toggle="tab"
+                                        aria-controls="step1"
+                                        role="tab"
+                                        aria-expanded="true"
+                                        ><span class="round-tab"
+                                          ><img
+                                            src="./imgs/wizared-icon/id.png"
+                                            alt=""
+                                          />
+                                        </span>
+                                        <small class="subtitle">Personal Info</small>
+                                        <i class="dot"></i
+                                      ></a>
+                                    </li>
+                                    <li role="presentation" class="disabled">
+                                      <a
+                                        href="#step2"
+                                        data-toggle="tab"
+                                        aria-controls="step2"
+                                        role="tab"
+                                        aria-expanded="false"
+                                        ><span class="round-tab"
+                                          ><img
+                                            src="./imgs/wizared-icon/passport.png"
+                                            alt=""
+                                        /></span>
+                                        <small class="subtitle">ID / Passport</small>
+                                        <i class="dot"></i
+                                      ></a>
+                                    </li>
+                                    <li role="presentation" class="disabled">
+                                      <a
+                                        href="#step3"
+                                        data-toggle="tab"
+                                        aria-controls="step3"
+                                        role="tab"
+                                        ><span class="round-tab"
+                                          ><img
+                                            src="./imgs/wizared-icon/license.png"
+                                            alt="" /></span
+                                        ><small class="subtitle">Driving License</small>
+                                        <i class="dot"></i
+                                      ></a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="login-box">
+                                <div class="tab-content" id="main_form">
+                                  <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <div class="signup-form " >
+                                    
+                                      <form
+                                        method="POST"
+                                        class="register-form pt-0"
+                                        id="register-form"
+                                      >
+                                      <div class="form-group">
+                                        <label for="email">Full Name *</label>
+                                        <i class="far fa-user"></i>
+                                        <input
+                                          type="text"
+                                          name="full-name"
+                                          id="full-name"
+                                          placeholder="Full Name "
+                                        />
+                                      </div>
+                                        <div class="form-group">
+                                          <label for="email">Email *</label>
+                                          <i class="far fa-envelope"></i>
+                                          <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Your Email"
+                                          />
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="email">Mobile *</label>
+                                          <i class="fas fa-mobile-alt"></i>
+                                           <input
+                                            type="text"
+                                            name="phone"
+                                            id="phone"
+                                            placeholder="Your phone"
+                                          />
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="pass"> password *</label>
+                                          <i class="fas fa-lock"></i>
+                                          <input
+                                            type="password"
+                                            name="pass"
+                                            id="pass"
+                                            placeholder="Password"
+                                          />
+                                        </div>
+                                      </form>
+                            
+                                    </div>
+                  
+                                    <ul class="list-inline pull-right d-flex  align-items-center">
+                                      <li>
+                                        <button type="button" class="default-btn next-step">
+                                         next 
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="tab-pane" role="tabpanel" id="step2">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <label >ID / Passport *</label>
+                                        <div class="alert alert-danger" role="alert">
+                                          you driving license must be valid 
+                                        </div>
+                                        <div class="file-drop-area"> <span class="choose-file-button">Choose files</span> <span class="file-message">or drag and drop files here</span> <input class="file-input" type="file" multiple>
+                                        </div>
+                                      </div>
+                                    
+                                    </div>
+                  
+                                    <ul class="list-inline pull-right d-flex  align-items-center">
+                                      <li>
+                                        <button type="button" class="default-btn prev-step">
+                                          Back
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button type="button" class="default-btn next-step">
+                                          Continue
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="tab-pane" role="tabpanel" id="step3">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <label >Driving license  *</label>
+                                        <div class="alert alert-danger" role="alert">
+                                          you driving license must be valid 
+                                        </div>
+                                        <div class="file-drop-area"> <span class="choose-file-button">Choose files</span> <span class="file-message">or drag and drop files here</span> <input class="file-input" type="file" multiple>
+                                        </div>
+                                        <div class="custom-check">
+                                          <input class="custom-check-input" id="someCheckte" name="someCheck" type="checkbox">
+                                          <label class="custom-check-elem" for="someCheckte"></label>
+                                          <label class="custom-check-label" for="someCheckte">by sign up you </label>
+                                        </div>
+                                      </div>
+                                    
+                                    </div>
+                                    <ul class="list-inline pull-right d-flex  align-items-center">
+                                      <li>
+                                        <button type="button" class="default-btn prev-step">
+                                          Back
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button type="button" class="default-btn next-step">
+                                          sign up
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="offset-lg-2 col-lg-6">
+                      <div class="sign-img">
+                        <img src="./imgs/signUp-bg.png" alt="sing up image" />
                       </div>
                     </div>
                   </div>
