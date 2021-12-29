@@ -1,0 +1,47 @@
+
+.navbar{
+    height: auto;
+}
+.nav-title{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.return-btn{
+    position: absolute;
+    color: #fff;
+    top: 5px;
+    left: 9px;
+    font-size: 20px;
+    width: 50px;
+    height: 37px;
+    text-align: center;
+}
+.return-btn a{
+    color: #fff;
+    width: 100%;
+}
+.content{
+    background-color: #fff;
+}
+h5 {
+    font-size: .9rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: #007bff;
+}
+
+.infos{
+    margin: 20px auto;
+    width: 95%;
+
+}
+.infos ul{
+    padding: 0 20px;
+    list-style-type: square;
+}
+.infos ul li {
+    margin: 10px auto;
+}
