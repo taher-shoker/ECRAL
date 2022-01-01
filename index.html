@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/all.css" />
     <!--=========== Animations Css  ===============-->
     <link rel="stylesheet" href="./css/animate.css" />
-    <!--=========== google fonts   ===============-->
+        <!--=========== google fonts   ===============-->
     <link
       href="https://fonts.googleapis.com/css2?family=Spartan&display=swap"
       rel="stylesheet"
@@ -30,7 +30,7 @@
             <a href="limousine.html">limousine services</a>
           </div>
           <div class="lang-selector">
-            <button type="button" class="">Eng</button>
+            <button type="button" id="en" class="">Eng</button>
             <button type="button" class="">العربية</button>
           </div>
         </header>
@@ -647,7 +647,20 @@
           <div class="modal-body">
             <div class="container">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col-12">
+                  <div class="group-btns mobile-show">
+                    <a href="rent-car.html" class="rental-btn hvr-fade">
+                      Rent a Car
+                    </a>
+                    <a type="/" class="long-rental hvr-fade"    data-toggle="modal"
+                    data-target="#packages">
+                      Long Term Rent
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
                   <ul>
                     <li class=""><a href="index.html" class="">home</a></li>
                     <li class="">
@@ -672,7 +685,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <ul>
                     <li class=""><a href="FAQs.html" class="">FAQS</a></li>
                     <li class=""><a href="blog.html" class="">blog</a></li>
@@ -689,7 +702,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <h3>help ?</h3>
                   <ul>
                     <li class="">
@@ -1281,6 +1294,7 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

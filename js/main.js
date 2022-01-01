@@ -111,9 +111,10 @@ $('#signUPForm').click(function(){
   $('#signIn').modal('hide')
   $('#signUp').modal('show')
 })
+
+
+
 $(document).on('change', '.file-input', function() {
-
-
   var filesCount = $(this)[0].files.length;
   
   var textbox = $(this).prev();
