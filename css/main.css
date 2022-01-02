@@ -136,7 +136,7 @@ section.banner.no-image {
 }
 .demo a {
   position: absolute;
-  bottom: 39%;
+  bottom: 90px;
   right: 40px;
   z-index: 2;
   display: inline-block;
@@ -1537,106 +1537,6 @@ footer .about-links li a {
 }
 /*======================= #End Style for footer==========================*/
 
-/*=========================Style for media queries  ============================*/
-/* small devices (portrait phones, less than 375px)*/
-@media (min-width: 320px) {
-}
-
-/* small devices (portrait phones, less than 375px)*/
-@media (min-width: 375px) {
-}
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 512px) {
-  .p-x-165 {
-    padding: 10px 0;
-  }
-  header .head-links a:last-of-type {
-    margin-left: 0;
-    display: block;
-  }
-  nav .nav-logo {
-    width: 150px;
-  }
-  .rent-form {
-    text-align: center;
-  }
-  [type="date"] {
-    width: 100%;
-  }
-  .offers {
-    margin-top: 120px;
-  }
-  .corporate-car .corporate {
-    background-size: cover;
-  }
-  .corporate-car .corporate .tabs {
-    /* display: none; */
-  }
-
-  .corporate-car .corporate .info button {
-    width: 90%;
-  }
-}
-
-/* Small devices (landscape phones, less than 768px)*/
-@media (min-width: 767.98px) {
-}
-
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {
-  #section10 a {
-    display: none;
-  }
-  .p-x-165 {
-    padding: 10px;
-  }
-  .group-btns {
-    display: none;
-  }
-  .mobile-show{
-    display: flex !important;
-  }
-  .rent-form {
-    padding: 30px 20px;
-    width: 100%;
-  }
-  .rent-now .img-box {
-    position: static;
-  }
-  .offers {
-    text-align: center;
-  }
-  .limousine-car .limousine-features .features-box {
-    justify-content: center;
-  }
-  .customer-feedback .customer-review li:nth-child(even) {
-    margin-left: 0;
-  }
-  footer {
-    padding: 50px 10px !important;
-  }
-  .corporate-car .corporate .tabs {
-    left: 0;
-    right: 0;
-    top: 200px;
-  }
-  .corporate-car .corporate .tabs ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  [type="date"] {
-    width: 100%;
-  }
-  .date-box {
-    margin: 16px 10px;
-  }
-  .small-txt {
-    width: 50%;
-  }
-  .packages .packages-box {
-    justify-content: center;
-  }
-}
 
 /******************** Sign In style **********************/
 .sign-in {
@@ -2388,4 +2288,130 @@ footer .about-links li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/*=========================Style for media queries  ============================*/
+/* small devices (portrait phones, less than 375px)*/
+@media (min-width: 320px) {
+}
+
+/* small devices (portrait phones, less than 375px)*/
+@media (min-width: 375px) {
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 512px) {
+  .p-x-165 {
+    padding: 10px 0;
+  }
+  header .head-links a:last-of-type {
+    margin-left: 0;
+    display: block;
+  }
+  nav .nav-logo {
+    width: 150px;
+  }
+  .rent-form {
+    text-align: center;
+  }
+  [type="date"] {
+    width: 100%;
+  }
+  .offers {
+    margin-top: 120px;
+  }
+  .corporate-car .corporate {
+    background-size: cover;
+  }
+  .corporate-car .corporate .tabs {
+    /* display: none; */
+  }
+
+  .corporate-car .corporate .info button {
+    width: 90%;
+  }
+  .pickup label::after{
+    display: none;
+  }
+  .pay-icon{
+    margin: 10px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (min-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  #section10 a {
+    display: none;
+  }
+  .p-x-165 {
+    padding: 10px;
+  }
+  .group-btns {
+    display: none;
+  }
+  .mobile-show{
+    display: flex !important;
+  }
+  .rent-form {
+    padding: 30px 20px;
+    width: 100%;
+  }
+  .rent-now .img-box {
+    position: static;
+  }
+  .box-checkout .box1{
+    width: 100%;
+    margin-left: unset;
+  }
+  .box-checkout .box1::after,.box-checkout .box1::before{
+    display: none;
+  }
+  .offers {
+    text-align: center;
+  }
+  .limousine-car .limousine-features .features-box {
+    justify-content: center;
+  }
+  .customer-feedback .customer-review li:nth-child(even) {
+    margin-left: 0;
+  }
+  footer {
+    padding: 50px 10px !important;
+  }
+  .corporate-car .corporate .tabs {
+    left: 0;
+    right: 0;
+    top: 200px;
+  }
+  .corporate-car .corporate .tabs ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  [type="date"] {
+    width: 100%;
+  }
+  .date-box {
+    margin: 16px 10px;
+  }
+  .small-txt {
+    width: 50%;
+  }
+  .packages .packages-box {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width:1600px) {
+  .p-x-165{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .rent-form{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
 }
