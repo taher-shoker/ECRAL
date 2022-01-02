@@ -126,3 +126,13 @@ $(document).on('change', '.file-input', function() {
   textbox.text(filesCount + ' files selected');
   }
   });
+
+
+  $('.date-input').datetimepicker({
+    timepicker:false,
+    format:'d.m.Y'
+  });
+  $('.time-input').datetimepicker({
+    datepicker:false,
+    format:'H:i a'
+  });

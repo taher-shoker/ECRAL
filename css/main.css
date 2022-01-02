@@ -448,6 +448,31 @@ select {
 [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
+.date-box{
+  position: relative;
+  margin: 0 10px;
+  text-align: left;
+}
+.date-box input{
+  width: 100%;
+  min-height: 33px;
+}
+.date-box::after{
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  color: #0b3543;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+  text-align: center;
+  pointer-events: none;
+  box-sizing: border-box;
+  font-weight: 900;
+}
+.date-box.time-box::after{
+  content: "\f017";
+}
 input:focus,
 select:focus {
   outline: none;
@@ -1602,8 +1627,8 @@ footer .about-links li a {
   [type="date"] {
     width: 100%;
   }
-  .date {
-    margin: 16px auto;
+  .date-box {
+    margin: 16px 10px;
   }
   .small-txt {
     width: 50%;
