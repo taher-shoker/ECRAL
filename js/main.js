@@ -136,3 +136,25 @@ $(document).on('change', '.file-input', function() {
     datepicker:false,
     format:'H:i a'
   });
+
+/******** Multi select **********/
+$(document).ready(function() {
+  $('#multiselect').multiselect({
+    buttonWidth : '100%',
+    includeSelectAllOption : true,
+		nonSelectedText: 'Multi Selection '
+  });
+});
+
+function getSelectedValues() {
+  var selectedVal = $("#multiselect").val();
+	for(var i=0; i<selectedVal.length; i++){
+		function innerFunc(i) {
+			setTimeout(function() {
+				location.href = selectedVal[i];
+			}, i*2000);
+		}
+		innerFunc(i);
+	}
+}
+

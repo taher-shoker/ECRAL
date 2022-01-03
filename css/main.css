@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap");
-
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('../webfonts/Roboto-Bold.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../webfonts/Roboto-Medium.ttf')  format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +13,7 @@
 }
 
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Roboto-Medium";
   height: 100%;
   width: 100%;
   text-align: left;
@@ -56,6 +62,9 @@ ul {
   padding-left: 165px;
   padding-right: 165px;
 }
+.mt-6{
+  margin-top: 30px;
+}
 .mt-56 {
   margin-top: 56px;
 }
@@ -90,7 +99,7 @@ img {
 section.banner {
   position: relative;
   width: 100%;
-  background-image: url("../imgs/banner_bg.jpg");
+  background-image: url("../imgs/banner_bg.png");
   height: 130vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,10 +109,14 @@ section.banner.no-image {
   background-image: none;
   height: 100%;
 }
-.small-banner {
+section.banner.limousine-bg{
+  background-image: url("../imgs/limousine-icons/limousine-banner.jpg");
+
+}
+.corporate-banner {
   position: relative;
   width: 100%;
-  background-image: url("../imgs/small-bg.jpg");
+  background-image: url("../imgs/corporate/Coporate-car-rental.png");
   height: 370px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,19 +132,32 @@ section.banner.no-image {
   height: 370px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+.join-team-bg{
+  background-image: url("../imgs/join_us_bg.png");
+}
+.bg-color{
+  background-image: none;
+  background-color: #daedf4 !important;
+  height: 250px;
+  align-items: center;
+}
+.list-car{
+  background-image: url("../imgs/list-car/List-Your-Car-Now.png");
+
 }
 .small-txt {
   background-color: #0a3442;
   color: #fff;
   margin-bottom: 32px;
-  border-radius: 25px;
-  padding: 8px 17px;
+  border-radius: 30px;
+  padding: 17px;
   font-size: 19px;
-  width: 14%;
+  width: 30%;
   text-transform: capitalize;
 }
 .demo a {
@@ -392,7 +418,7 @@ nav .nav-links a {
   background-color: #fff;
   width: 82.3%;
   margin: 55px auto;
-  padding: 20px 100px 10px 100px;
+  padding: 20px 10px 10px 70px;
   color: #0b3543;
   position: relative;
 }
@@ -509,6 +535,7 @@ select:focus {
   justify-content: space-between;
   margin-bottom: 4px;
   padding-top: 4px;
+  flex-wrap: wrap;
 }
 .location .select-drop {
   position: relative;
@@ -531,7 +558,7 @@ select:focus {
   color: #fff;
   padding: 10px 16px;
   border-radius: 20px;
-  width: 165px;
+  width: 150px;
   margin-top: 18px;
   text-transform: capitalize;
 }
@@ -737,6 +764,7 @@ input[type=range]::-ms-thumb {
   color: #185a70;
   font-size: 30px;
   font-weight: 100;
+  margin-top: 50px;
 }
 .offers .info span {
   text-transform: capitalize;
@@ -1343,15 +1371,23 @@ input[type=range]::-ms-thumb {
 /*===================== #End Style for Corporate Packages   ==============================*/
 /*===================== Stat Style for  Requirements Corporate   ==============================*/
 .requirements-co {
-  background-image: url("../imgs/banner_bg.jpg");
+  background-image: url("../imgs/corporate/corporate-form.jpg");
   background-size: cover;
   min-height: 900px;
-  padding-top: 100px;
+  padding-top: 70px;
   color: #fff;
+  background-position: center;
+}
+.list-car-form{
+  background-image: url("../imgs/list-car/List-Your-Car-form.png");
 }
 .requirements-co h3 {
   text-transform: capitalize;
   color: #fff;
+  margin-left: 20px;
+}
+.requirements-co li{
+  margin: 16px auto;
 }
 .form input,
 .form select,
@@ -1368,7 +1404,7 @@ input[type=range]::-ms-thumb {
   color: #daedf4;
 }
 
-.requirements-co button {
+.requirements-co button.send-btn {
   background-color: #fcb040;
   color: #fff;
   margin: 16px auto;
@@ -1377,7 +1413,6 @@ input[type=range]::-ms-thumb {
   padding: 8px 16px;
   width: 100%;
 }
-
 .custom_radio {
   display: flex;
   justify-content: space-between;
@@ -1394,6 +1429,7 @@ input[type=range]::-ms-thumb {
   line-height: 1em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #0a3442;
 }
 .radio-item input[type="radio"] + label:before,
 .radio-item input[type="radio"] + label:after {
@@ -1422,7 +1458,7 @@ input[type=range]::-ms-thumb {
 .radio-item input[type="radio"]:checked + label:before {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  box-shadow: inset 0 0 0 0.2em #fcb040, inset 0 0 0 1em #0a3442;
+  box-shadow: inset 0 0 0 0.2em #fcb040, inset 0 0 0 .7em #0a3442;
 }
 .radio-item {
   background-color: #fff;
@@ -1454,6 +1490,108 @@ input[type=range]::-ms-thumb {
   filter: none;
 }
 /*===================== #End Style for  Partners   ==============================*/
+/*===================== Start Style for  List Your Car   ==============================*/
+
+.list-car-form .multiselect-native-select {
+  position: relative;
+}
+.list-car-form .multiselect-native-select select {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px -1px -1px -3px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  left: 50%;
+  top: 30px;
+}
+.list-car-form .multiselect-container {
+  position: absolute;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 99%;
+  left: .5% !important;
+  background: #e9eef1;
+  color: #0b3543;
+}
+.list-car-form .multiselect-container a {
+  color: #0b3543;
+}
+.list-car-form .multiselect.dropdown-toggle.btn.btn-default{
+ border-bottom: 1px solid #fff;
+ color: #fff;
+ text-align: left;
+ padding-left: 0;
+}
+.list-car-form .dropdown-toggle::after{
+  display: none;
+}
+.list-car-form .dropdown-toggle::before{
+  content: "\f078";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1em;
+  text-align: center;
+}
+.list-car-form .multiselect-container .input-group {
+  margin: 5px;
+}
+.list-car-form .multiselect-container li {
+  padding: 0;
+}
+.list-car-form .multiselect-container li .multiselect-all label {
+  font-weight: 700;
+}
+.list-car-form .multiselect-container li a {
+  padding: 0;
+}
+.list-car-form .multiselect-container li a label {
+  margin: 0;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 3px 20px 3px 40px;
+}
+.list-car-form .multiselect-container li a label input[type=checkbox] {
+  margin-bottom: 5px;
+}
+.list-car-form .multiselect-container li a label.radio {
+  margin: 0;
+}
+.list-car-form .multiselect-container li a label.checkbox {
+  margin: 0;
+}
+.list-car-form .multiselect-container li.multiselect-group label {
+  margin: 0;
+  padding: 3px 20px 3px 20px;
+  height: 100%;
+  font-weight: 700;
+}
+.list-car-form .multiselect-container li.multiselect-group-clickable label {
+  cursor: pointer;
+}
+.list-car-form .form-inline .multiselect-container label.checkbox {
+  padding: 3px 20px 3px 40px;
+}
+.list-car-form .form-inline .multiselect-container label.radio {
+  padding: 3px 20px 3px 40px;
+}
+.list-car-form .form-inline .multiselect-container li a label.checkbox input[type=checkbox] {
+  margin-left: -20px;
+  margin-right: 0;
+}
+.list-car-form .form-inline .multiselect-container li a label.radio input[type=radio] {
+  margin-left: -20px;
+  margin-right: 0;
+}
+/*===================== #End Style for  List Your Car   ==============================*/
 
 /*======================= Style for footer==========================*/
 footer {
@@ -1481,7 +1619,8 @@ footer .social-links {
   display: flex;
   align-self: center;
   justify-content: space-between;
-  margin: 40px 30px;
+  margin: 40px 12px;
+  flex-wrap: wrap;
 }
 footer .social-links li {
   background-color: #fff;
@@ -1492,6 +1631,7 @@ footer .social-links li {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 5px 5px;
 }
 footer .social-links li a {
   font-size: 18px;
@@ -2289,6 +2429,17 @@ footer .about-links li a {
   justify-content: space-between;
   align-items: center;
 }
+/*=====================  Style FAQS section  ==============================*/
+.faqs{
+  margin-top: 50px;
+}
+.add-question{
+  background-color: #0a3442;
+  border-radius: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
 /*=========================Style for media queries  ============================*/
 /* small devices (portrait phones, less than 375px)*/
 @media (min-width: 320px) {
@@ -2403,7 +2554,7 @@ footer .about-links li a {
   }
 }
 
-@media (min-width: 1024px) and (max-width:1600px) {
+@media (min-width: 1024px) and (max-width:1750px) {
   .p-x-165{
     padding-left: 20px;
     padding-right: 20px;
@@ -2411,7 +2562,10 @@ footer .about-links li a {
   .rent-form{
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
   }
-
+  .limousine-car .limousine-features .feature{
+    width: 240px;
+  }
 
 }
