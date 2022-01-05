@@ -126,6 +126,9 @@ span.round-tab {
   font-size: 12px;
   font-weight: 700;
 }
+.wizard .nav-tabs.three-tabs > li a i{
+top: 11px;
+}
 .wizard .nav-tabs > li a .subtitle {
   color: #bdced5;
   top: 67px;

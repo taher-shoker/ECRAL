@@ -586,6 +586,7 @@ select:focus {
   z-index: 999;
   padding: 10px;
   height: auto;
+  display: none;
 }
 .box-head {
   display: flex;
@@ -1689,7 +1690,7 @@ footer .about-links li a {
   color: #fff;
   left: -117px;
   font-weight: normal;
-  z-index: 9999 !important;
+  z-index: 9 !important;
 }
 .payment {
   margin-top: 50px;
@@ -2782,6 +2783,16 @@ footer .about-links li a {
   .btn-subscribe {
     left: 0;
   }
+  .menu-comprased{
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1630px) {
+  .rent-now ul#pills-tab li a{
+    max-width: 125px;
+  }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1750px) {
