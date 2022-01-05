@@ -963,15 +963,19 @@ input[type="range"]::-ms-thumb {
 .nav-pills .show > .nav-link {
   background-color: transparent;
 }
-.rent-now ul#pills-tab li.active span:first-of-type {
+.rent-now ul#pills-tab .nav-link.active span:first-of-type {
   background-color: #fcb040 !important;
   color: #fff;
   width: 50px !important;
   height: 50px !important;
   line-height: 50px !important;
 }
-.rent-now ul#pills-tab li.active span:last-of-type {
-  color: #fff !important;
+.rent-now ul#pills-tab .nav-link.active span:last-of-type {
+  color: #fff ;
+}
+.book-limousine ul#pills-tab .nav-link.active span:last-of-type {
+  color: #0b3543;
+  font-weight: bolder;
 }
 .rent-now .tab-content {
   margin-left: 30px;
