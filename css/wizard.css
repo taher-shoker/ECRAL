@@ -286,8 +286,8 @@ input[type="checkbox"]::after {
   display: inline-block;
 }
 input[type="checkbox"]::before {
-  height: 16px;
-  width: 16px;
+  height: 17px;
+  width: 17px;
   border: 1px solid #999;
   left: 0px;
   top: 0px;
