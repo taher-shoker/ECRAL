@@ -47,7 +47,7 @@ section.banner.limousine-bg { background-image: url("../imgs/limousine-icons/lim
 .font-70 { font-size: 70px; }
 .primary-color { color: rgb(10, 52, 66); }
 header { padding-top: 35px; padding-bottom: 55px; width: 100%; display: flex; align-self: center; justify-content: space-between; }
-header .head-links a { color: rgb(22, 90, 112); text-transform: capitalize; padding-top: 8px; font-family: Roboto-Regular; }
+header .head-links a {color: rgb(35 131 162);text-transform: capitalize;padding-top: 8px;/* font-family: Roboto-Regular; */}
 header .head-links a:first-of-type { margin-right: 25px; }
 header .head-links a:last-of-type { margin-left: 25px; }
 header .head-links a:hover, header .head-links a:active, header .head-links a:focus, header .head-links a:focus { border-top: 2px solid rgb(252, 176, 64); }
@@ -57,7 +57,7 @@ header .lang-selector button:first-of-type { border-right: 1px solid rgb(11, 53,
 header .lang-selector button:last-of-type { padding-right: 0px; }
 nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
 nav .nav-logo { display: flex; flex-direction: column; align-items: center; }
-nav .nav-logo img { width: 213px; }
+nav .nav-logo img {width: 190px;}
 .nav-logo span { font-size: 10px; color: rgb(11, 53, 67); display: none; }
 nav .nav-links { display: flex; align-items: center; justify-content: space-between; }
 nav .nav-links .menu-btn { background-color: transparent; border-top: none; border-bottom: none; border-left: none; border-image: initial; text-transform: capitalize; color: rgb(11, 53, 67); display: flex; align-items: center; padding: 0px 10px; border-right: 1px solid rgb(11, 53, 67); font-size: 18px; }
@@ -247,12 +247,12 @@ input[type="range"]::-webkit-slider-thumb { z-index: 2; position: relative; box-
 .requirements-co button.send-btn { background-color: rgb(252, 176, 64); color: rgb(255, 255, 255); margin: 16px auto; border-radius: 25px; text-transform: capitalize; padding: 8px 16px; width: 100%; }
 .custom_radio { display: flex; justify-content: space-between; }
 .radio-item input[type="radio"] { display: none; }
-.radio-item input[type="radio"] + label { position: relative; display: inline-block; padding-left: 2.5em; margin-right: 2em; cursor: pointer; line-height: 1em; transition: all 0.3s ease-in-out 0s; color: rgb(10, 52, 66); }
+.radio-item input[type="radio"] + label {position: relative;display: inline-block;padding-left: 2.5em;margin-right: 0;cursor: pointer;line-height: 1em;transition: all 0.3s ease-in-out 0s;color: rgb(10, 52, 66);margin-bottom: 0;font-size: 12px;font-weight: bold;}
 .radio-item input[type="radio"] + label::before, .radio-item input[type="radio"] + label::after { content: ""; position: absolute; top: -6px; left: -6px; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); border-radius: 50%; transition: all 0.3s ease 0s; }
 .radio-item input[type="radio"] + label::before { transition: all 0.3s ease 0s; box-shadow: rgb(252, 176, 64) 0px 0px 0px 0.2em inset, rgb(255, 255, 255) 0px 0px 0px 1em inset; }
 .radio-item input[type="radio"] + label:hover::before { transition: all 0.3s ease 0s; box-shadow: rgb(252, 176, 64) 0px 0px 0px 0.3em inset, rgb(109, 134, 141) 0px 0px 0px 1em inset; }
 .radio-item input[type="radio"]:checked + label::before { transition: all 0.3s ease 0s; box-shadow: rgb(252, 176, 64) 0px 0px 0px 0.2em inset, rgb(10, 52, 66) 0px 0px 0px 0.7em inset; }
-.radio-item { background-color: rgb(255, 255, 255); margin: 0px 5px; border-radius: 10px; display: flex; padding: 10px; }
+.radio-item {background-color: rgb(255, 255, 255);margin: 0px 5px;border-radius: 10px;display: flex;padding: 10px;}
 .partners { margin-top: 60px; margin-bottom: 30px; }
 .partners h3 { color: rgb(10, 52, 66); text-transform: capitalize; text-align: center; margin: 50px auto; }
 .partners img { filter: grayscale(); width: 100px; margin: 18px auto; }
@@ -279,11 +279,13 @@ input[type="range"]::-webkit-slider-thumb { z-index: 2; position: relative; box-
 .list-car-form .form-inline .multiselect-container li a label.checkbox input[type="checkbox"] { margin-left: -20px; margin-right: 0px; }
 .list-car-form .form-inline .multiselect-container li a label.radio input[type="radio"] { margin-left: -20px; margin-right: 0px; }
 footer { background-color: rgb(11, 53, 67); color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 20px; margin-top: 100px; }
-footer .footer-logo { height: 70px; }
-footer .nav-logo { display: flex; flex-direction: column; align-items: center; }
+footer .footer-logo {
+    width: 190px;
+}
+footer .nav-logo {display: flex;flex-direction: column;align-items: baseline;}
 footer .nav-logo span { color: rgb(255, 255, 255); padding-top: 5px; font-size: 11px; }
-footer .social-links { display: flex; align-self: center; justify-content: space-between; margin: 40px 12px; flex-wrap: wrap; }
-footer .social-links li { background-color: rgb(255, 255, 255); width: 35px; height: 35px; border-radius: 50%; line-height: 35px; display: flex; align-items: center; justify-content: center; margin: 5px; }
+footer .social-links {display: flex;align-self: center;justify-content: flex-start;margin: 40px 0px;flex-wrap: wrap;}
+footer .social-links li {background-color: rgb(255, 255, 255);width: 35px;height: 35px;border-radius: 50%;line-height: 35px;display: flex;align-items: center;justify-content: center;margin: 5px;}
 footer .social-links li a { font-size: 18px; color: rgb(252, 176, 64); }
 footer .copy-rights { text-transform: capitalize; }
 footer h4 { color: rgb(255, 255, 255); letter-spacing: 1px; text-align: left; font-size: 1rem; font-weight: bold; padding-bottom: 10px; padding-top: 16px; }
