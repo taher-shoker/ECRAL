@@ -314,6 +314,42 @@ nav .nav-links a {
   color: rgb(11, 53, 67);
   font-size: 18px;
 }
+#signIn_btn{position: relative;}
+#signIn_btn:hover .drop-down-sign-in{display: block;}
+.drop-down-sign-in{
+  display: none;
+  position: absolute;
+  width: 400px;
+  background-color: #fff;
+  padding: 25px;
+  z-index: 2;
+  top: 45px;
+  right: -80px;
+  border-radius: 5px;
+  border: 1px solid #daedf4;
+}
+.drop-down-sign-in strong{font-size: 21px;}
+.drop-down-sign-in .exclusive{
+    padding: 16px 0;
+    color: #23a5d2;
+}
+.drop-down-sign-in .exclusive a{font-size: 23px;padding: 0;color: #fcb040;font-weight: bold;}
+.drop-down-sign-in p{border-top: 1px solid #daedf4;}
+.drop-down-sign-in p a{font-weight: bold;text-decoration: underline;}
+.drop-down-sign-in::after{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-right: 1px solid #daedf4;
+  border-bottom: 1px solid #daedf4;
+  -moz-transform: rotate(222deg);
+  -webkit-transform: rotate(222deg);
+  top: -7px;
+  right: 94px;
+  position: absolute;
+}
+
 .group-btns {
   display: flex;
   margin-left: 45px;
@@ -379,6 +415,9 @@ nav .nav-links a {
 }
 .menu-comprased.main-menu ul li {
   margin: 16px auto;
+}
+.menu-comprased ul.first-links  li a{
+  font-weight: bold;
 }
 .menu-comprased ul li a {
   color: rgb(24, 90, 112);
@@ -2532,6 +2571,18 @@ footer .about-links li a {
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
   display: none;
 }
+
+.arrows-box{
+  margin-top: 20px;
+}
+.arrows-box button{width: 60px;height: 60px;background: #bcdce7;font-size: 30px;color: #8eb7c5;}
+.arrows-box button i{
+}
+.arrows-box button:hover,.arrows-box button:focus{
+  background: #fcb040;color: #fff;
+}
+.arrows-box .active{background: #fcb040;color: #fff;}
+
 @media (min-width: 320px) {
 }
 @media (min-width: 375px) {

@@ -46,8 +46,21 @@
             >
               <img src="./imgs/icon.png" alt="" /> menu
             </button>
-            <a href="#" class="register"   data-toggle="modal"
-            data-target="#signIn">sign in</a>
+            <div id="signIn_btn">
+              <a href="#" class="register">sign in</a>  
+                <div class="drop-down-sign-in">
+                  <strong>great to see you! </strong>
+                  <div class="exclusive">
+                    <a href="#" data-toggle="modal"
+                    data-target="#signUp"  >Sign Up</a> to get exclusive Deals & offers
+                  </div>
+                  <p>
+                    already have an Account 
+                    <a href="#" data-toggle="modal"
+                    data-target="#signIn">sign in</a>
+                  </p>
+                </div>
+              </div>
             <div class="group-btns">
               <a href="rent-car.html" class="rental-btn hvr-fade">
                 Rent a Car
@@ -348,94 +361,107 @@
      <!-- Start Menu Modal -->
     <!-- Modal -->
     <div
-      class="modal fade menu-comprased main-menu"
-      id="menu-box"
-      data-backdrop="static"
-      data-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4">
-                  <ul>
-                    <li class=""><a href="index.html" class="">home</a></li>
-                    <li class="">
-                      <a href="visions&missions.html" class=""
-                        >mission & vision</a
-                      >
-                    </li>
-                    <li class="">
-                      <a href="our-fleet.html" class="">our fleet</a>
-                    </li>
-                    <li class="">
-                      <a href="corporate.html" class="">corporate services</a>
-                    </li>
-                    <li class="">
-                      <a href="limousine.html" class="">limousine services</a>
-                    </li>
-                    <li class="">
-                      <a href="list-your-car.html" class="">list your car</a>
-                    </li>
-                    <li class="">
-                      <a href="partners.html" class="">partners</a>
-                    </li>
-                  </ul>
+    class="modal fade menu-comprased main-menu"
+    id="menu-box"
+    data-backdrop="static"
+    data-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="group-btns mobile-show">
+                  <a href="rent-car.html" class="rental-btn hvr-fade">
+                    Rent a Car
+                  </a>
+                  <a type="/" class="long-rental hvr-fade"    data-toggle="modal"
+                  data-target="#packages">
+                    Long Term Rent
+                  </a>
                 </div>
-                <div class="col-lg-4">
-                  <ul>
-                    <li class=""><a href="FAQs.html" class="">FAQS</a></li>
-                    <li class=""><a href="blog.html" class="">blog</a></li>
-                    <li class="">
-                      <a href="join-team.html" class="">join ECRAL team</a>
-                    </li>
-                    <li class="">
-                      <a href="get-touch.html" class="">get in touch</a>
-                    </li>
-                    <li class="">
-                      <a href="terms&conditions.html" class=""
-                        >terms & conditions</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-4">
-                  <h3>help ?</h3>
-                  <ul>
-                    <li class="">
-                      <p>e-mail</p>
-                      <span>example@ercal.com</span>
-                    </li>
-                    <li class="">
-                      <p>mobile</p>
-                      <span>+2 01009582340</span>
-                    </li>
-                    <li class="">
-                      <p>fax</p>
-                      <span>+2 01009582340</span>
-                    </li>
-                  </ul>
-                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <ul class="first-links">
+                  <li class=""><a href="index.html" class="">home</a></li>
+                  <li class="">
+                    <a href="visions&missions.html" class=""
+                      >mission & vision</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="our-fleet.html" class="">our fleet</a>
+                  </li>
+                  <li class="">
+                    <a href="corporate.html" class="">corporate services</a>
+                  </li>
+                  <li class="">
+                    <a href="limousine.html" class="">limousine services</a>
+                  </li>
+                  <li class="">
+                    <a href="list-your-car.html" class="">list your car</a>
+                  </li>
+                  <li class="">
+                    <a href="partners.html" class="">partners</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <ul>
+                  <li class=""><a href="FAQs.html" class="">FAQS</a></li>
+                  <li class=""><a href="blog.html" class="">blog</a></li>
+                  <li class="">
+                    <a href="join-team.html" class="">join ECRAL team</a>
+                  </li>
+                  <li class="">
+                    <a href="get-touch.html" class="">get in touch</a>
+                  </li>
+                  <li class="">
+                    <a href="terms&conditions.html" class=""
+                      >terms & conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <h3>help ?</h3>
+                <ul>
+                  <li class="">
+                    <p>e-mail</p>
+                    <span>example@ercal.com</span>
+                  </li>
+                  <li class="">
+                    <p>mobile</p>
+                    <span>+2 01009582340</span>
+                  </li>
+                  <li class="">
+                    <p>fax</p>
+                    <span>+2 01009582340</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
     <!--End Menu Modal-->
     <!-- Start SignIn Modal -->
     <div
