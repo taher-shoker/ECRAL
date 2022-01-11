@@ -14,6 +14,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+ 
 }
 body {
   font-family: Roboto-Medium;
@@ -397,7 +398,7 @@ nav .nav-links a {
 .rent-form {
   background-color: rgb(255, 255, 255);
   width: 82.3%;
-  margin: 55px auto;
+  margin: 45px auto;
   padding: 20px 10px 10px 70px;
   color: rgb(11, 53, 67);
   position: relative;
@@ -688,7 +689,7 @@ input[type="range"]::-webkit-slider-thumb {
 .offers h2 {
   color: rgb(24, 90, 112);
   text-transform: capitalize;
-  font-size: 48px;
+  font-size: 43px;
 }
 .offers .col-lg-4 {
   padding-left: 5px !important;
@@ -884,7 +885,7 @@ input[type="range"]::-webkit-slider-thumb {
 .rent-now .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: transparent;
-  width: 240px;
+  min-width: 182px;
 }
 .rent-now ul#pills-tab .nav-link.active span:first-of-type {
   color: rgb(255, 255, 255);
@@ -2643,16 +2644,30 @@ footer .about-links li a {
   .rent-now ul#pills-tab .nav-link.active span:last-of-type{
     font-size: 16px;
   }
+ .custom-scale{
+  /* transform:scaleX(.87);
+  -ms-transform:scaleX(.87); 
+  -moz-transform:scaleX(.87); 
+  -webkit-transform:scaleX(.87); 
+  -o-transform:scaleX(.87); 
+   */
+ }
+ .demo a{
+   /* bottom: -190%; */
+   /* right: 0; */
+ }
+
 }
 @media (min-width: 1024px) and (max-width: 1750px) {
   .p-x-165 {
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
   }
   .rent-form {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* width: 100%; */
+    /* margin: 28px auto; */
   }
   .limousine-car .limousine-features .feature {
   }

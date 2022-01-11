@@ -158,3 +158,11 @@ function getSelectedValues() {
 	}
 }
 
+  $(window).on('resize', function(){
+    var win = $(this); //this = window
+    console.log(win.width())
+     if (  win.width() < 1680  ) { document.body.style.zoom = "67%"; }
+  });
+  
+
+  document.body.style.zoom = "67%";
