@@ -926,6 +926,7 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 0px;
   text-transform: capitalize;
   font-size: 16px;
+  margin-bottom: 0px;
 }
 .styled-checkbox + label::before {
   content: "";
@@ -935,7 +936,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
   border: 1px solid rgb(248, 253, 255);
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .styled-checkbox:hover + label::before {
   background: rgb(252, 176, 64);
@@ -967,7 +968,7 @@ input[type="range"]::-webkit-slider-thumb {
   transform: rotate(45deg);
 }
 .rent-now .tab-content li {
-  margin: 10px 0px;
+  margin: 22px 0px;
 }
 .rent-now button {
   background-color: rgb(252, 176, 64);
