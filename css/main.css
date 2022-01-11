@@ -23,6 +23,7 @@ body {
   text-align: left;
   color: rgb(24, 90, 112);
   text-transform: capitalize !important;
+  font-size: 18px;
 }
 .btn-success {
   background: rgb(0, 98, 65);
@@ -382,6 +383,7 @@ nav .nav-links a {
 .menu-comprased ul li a {
   color: rgb(24, 90, 112);
   text-transform: capitalize;
+  font-size: 25px;
 }
 .menu-comprased ul li a:hover {
   color: rgb(252, 176, 64);
@@ -394,6 +396,7 @@ nav .nav-links a {
 .menu-comprased span {
   text-transform: capitalize;
   padding: 10px 0px;
+  font-size: 22px;
 }
 .rent-form {
   background-color: rgb(255, 255, 255);
@@ -828,7 +831,8 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 9px 16px;
   font-weight: normal;
   width: 50%;
-  margin: 0px 100px;
+  margin: 0px auto;
+  font-size: 22px;
 }
 .rent-now {
   background-color: rgb(10, 52, 66);
@@ -890,9 +894,9 @@ input[type="range"]::-webkit-slider-thumb {
 .rent-now ul#pills-tab .nav-link.active span:first-of-type {
   color: rgb(255, 255, 255);
   background-color: rgb(252, 176, 64) !important;
-  width: 85px !important;
-  height: 85px !important;
-  line-height: 85px !important;
+  width: 70px !important;
+  height: 70px !important;
+  line-height: 70px !important;
 }
 .rent-now ul#pills-tab .nav-link.active span:last-of-type {
   color: rgb(255, 255, 255);
@@ -908,9 +912,9 @@ input[type="range"]::-webkit-slider-thumb {
 .rent-now ul#pills-tab li:hover span:first-of-type {
   color: rgb(255, 255, 255);
   background-color: rgb(252, 176, 64) !important;
-  width: 85px !important;
-  height: 85px !important;
-  line-height: 85px !important;
+  width: 70px !important;
+  height: 70px !important;
+  line-height: 70px !important;
 }
 .styled-checkbox {
   position: absolute;
@@ -1139,7 +1143,7 @@ input[type="range"]::-webkit-slider-thumb {
   padding-bottom: 10px;
   margin: 25px auto;
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 22px;
   border: none;
 }
 .earn-money button:hover,
@@ -1563,6 +1567,9 @@ footer .social-links li a {
 }
 footer .copy-rights {
   text-transform: capitalize;
+  padding-right: 24px;
+  font-size: 20px;
+  line-height: 2;
 }
 footer h4 {
   color: rgb(255, 255, 255);
@@ -1579,7 +1586,7 @@ footer .about-links li {
 footer .about-links li a {
   color: rgb(250, 249, 249);
   text-transform: capitalize;
-  font-size: 12px;
+  font-size: 18px;
 }
 .btn-subscribe {
   background-color: rgb(108, 146, 159);
@@ -1722,9 +1729,9 @@ footer .about-links li a {
 }
 .fleet_content {
   color: rgb(24, 90, 112);
-  font-size: 0.8em;
+  font-size: 20px;
   padding-left: 0px;
-  text-align: center;
+  text-align: justify;
 }
 .right_fleet_header {
   font-weight: 900;
@@ -1863,6 +1870,7 @@ footer .about-links li a {
 .our-team .card-body {
   padding-left: 0px;
   padding-bottom: 0px;
+  font-size: 22px;
 }
 .our-team p {
   padding-left: 0px;
@@ -2390,7 +2398,7 @@ footer .about-links li a {
 .get-touch-info ul {
   margin-top: 30px;
   padding-left: 16px;
-  width: 75%;
+  width: 66%;
 }
 .get-touch-info ul li {
   margin: 31px 0px;
@@ -2644,18 +2652,9 @@ footer .about-links li a {
   .rent-now ul#pills-tab .nav-link.active span:last-of-type{
     font-size: 16px;
   }
- .custom-scale{
-  /* transform:scaleX(.87);
-  -ms-transform:scaleX(.87); 
-  -moz-transform:scaleX(.87); 
-  -webkit-transform:scaleX(.87); 
-  -o-transform:scaleX(.87); 
-   */
- }
- .demo a{
-   /* bottom: -190%; */
-   /* right: 0; */
- }
+  section.banner {
+    height: 1050px;
+  }
 
 }
 @media (min-width: 1024px) and (max-width: 1750px) {
@@ -2670,5 +2669,8 @@ footer .about-links li a {
     /* margin: 28px auto; */
   }
   .limousine-car .limousine-features .feature {
+  }
+  .modal-backdrop{
+    width: 100%;
   }
 }
