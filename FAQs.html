@@ -113,7 +113,8 @@
         </p>
         <div class="row text-center mt-4">
          <div class="offset-md-4 col-md-4">
-          <button class="btn add-question" >add your question</button>
+          <button class="btn add-question" data-toggle="modal"
+          data-target="#addQuestion">add your question</button>
          </div>
         </div>
       </div>
@@ -384,6 +385,80 @@
     </footer>
     <!-- End Footer-->
     <!-- Start Menu Modal -->
+     <!-- Start Add Question Modal -->
+     <div
+     class="modal fade menu-comprased"
+     id="addQuestion"
+     data-backdrop="static"
+     data-keyboard="false"
+     tabindex="-1"
+     aria-labelledby="staticBackdropLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header pt-0 pb-0">
+           <button
+             type="button"
+             class="close"
+             data-dismiss="modal"
+             aria-label="Close"
+           >
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <section class="sign-in p-x-16">
+             <div class="container-fluid">
+              <div class="signup-form">
+                <form
+                  method="POST"
+                  class="register-form p-0"
+                  id="register-form"
+                >
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <i class="far fa-envelope"></i>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="pass"> question category </label>
+                    <select class=" " name="" id="">
+                      <option value="">choose</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="question">your question *</label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="question"
+                      placeholder="write your question"
+                    />
+                  </div>
+                </form>
+               
+                <div class="row text-center">
+                  <div class="offset-3 col-6">
+                    <button type="button" class="btn send-question-btn">
+                      send
+                     </button>
+                  </div>
+                </div>
+               
+              </div>
+             </div>
+           </section>
+         </div>
+       </div>
+     </div>
+   </div>
+       <!-- Start Request Long term Modal -->
     <!-- Modal -->
     <div
       class="modal fade menu-comprased main-menu"
@@ -411,7 +486,7 @@
               <div class="row">
                 <div class="col-lg-4 col-md-6">
                   <ul>
-                    <li class=""><a href="index.html" class="">borrower</a></li>
+                    <li class=""><a href="index.html" class="">home</a></li>
                     <li class="">
                       <a href="visions&missions.html" class=""
                         >mission & vision</a
@@ -478,7 +553,7 @@
     <!-- Start SignIn Modal -->
     <div
       class="modal fade menu-comprased"
-      id="signIn"
+      id="SignIn"
       data-backdrop="static"
       data-keyboard="false"
       tabindex="-1"
@@ -502,9 +577,8 @@
               <div class="container-fluid">
                 <div class="sign-in-content">
                   <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-12">
                       <div class="signup-form">
-                        <h2 class="form-title">Sign in</h2>
                         <form
                           method="POST"
                           class="register-form"
@@ -555,11 +629,6 @@
                         <hr />
                         <p>Don't Have an Account?</p>
                         <a href="#" id="signUPForm">sign up</a>
-                      </div>
-                    </div>
-                    <div class="offset-lg-2 col-lg-6">
-                      <div class="sign-img">
-                        <img src="./imgs/signIn-bg.png" alt="sing up image" />
                       </div>
                     </div>
                   </div>

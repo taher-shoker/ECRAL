@@ -131,15 +131,21 @@ $(document).on('change', '.file-input', function() {
   });
 
 
-  $('.date-input').datetimepicker({
-    timepicker:false,
-    format:'d.m.Y'
-  });
-  $('.time-input').datetimepicker({
-    datepicker:false,
-    format:'H:i a'
-  });
 
+  $( function() {
+    $( ".date-input" ).datepicker();
+  });
+  $('.time-input').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
 /******** Multi select **********/
 $(document).ready(function() {
   $('#multiselect').multiselect({
@@ -161,11 +167,63 @@ function getSelectedValues() {
 	}
 }
 
-  $(window).on('resize', function(){
-    var win = $(this); //this = window
-    console.log(win.width())
-     if (  768 < win.width() < 1400  ) { document.body.style.zoom = "65%"; }
+
+$( function() {
+  $( "#slider-range-min" ).slider({
+    range: "min",
+    value: 37,
+    min: 1,
+    max: 700,
+    slide: function( event, ui ) {
+      $( "#amount" ).val( "$" + ui.value );
+    }
   });
+  $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+} );
+$( function() {
+  $( "#slider-range-min-2" ).slider({
+    range: "min",
+    value: 37,
+    min: 1,
+    max: 700,
+    slide: function( event, ui ) {
+      $( "#amount-2" ).val( "$" + ui.value );
+    }
+  });
+  $( "#amount-2" ).val( "$" + $( "#slider-range-min-2" ).slider( "value" ) );
+} );
 
-   if ( 768 < window.innerWidth < 1480  ) { document.body.style.zoom = "66%"; }
-
+$(document).ready(function(){
+  $('.benefits-items').slick({
+    arrows: true,
+  infinite: true,
+  autoplay: true,
+  adaptiveHeight: true,
+  speed: 300,
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+   
+  ]
+  });
+});

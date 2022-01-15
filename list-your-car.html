@@ -12,7 +12,12 @@
     <!--=========== Animations Css  ===============-->
     <link rel="stylesheet" href="./css/animate.css" />
     <!--=========== Date Picker Css  ===============-->
-    <link rel="stylesheet" href="./css/jquery.datetimepicker.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" href="./css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"
@@ -83,27 +88,46 @@
       </div>
     </section>
     <!-- End Banner Section-->
-
     <!-- Start Small Banner Section-->
-    <section class="partner-bg list-car"></section>
+    <section class="partner-bg list-car">
+      <button class="btn small-txt" >
+        List your Car now 
+      </button>
+    </section>
     <!-- End Small Banner Section-->
 
     <!-- Start Rent Out Your Car Section-->
     <section class="rent-out-car wow fadeInUp">
       <div class="container">
-        <div class="">
-          <h2>rent out your car & <strong>
-            start earning money !
-          </strong></h2>
-        </div>
         <div class="row">
+          <div class="offset-md-3 col-md-6">
+            <h2>rent out your car &
+              <strong>start earning money !</strong></h2>
+          </div>
+         
+        </div>
+        <div class="row statistics">
           <div class="col-12">
-            <div class="statistics">
-              <div class="input-statistic">
-
+            <div class="row align-items-center">
+              <div class="col-md-9">
+                <div class="input-statistic">
+                  <div class="statistic-part">
+                    <h5>Days/month your car is rented</h5>
+                    <input type="text" id="amount" class="range-value" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    <div id="slider-range-min"></div>
+                  </div>
+                  <div class="statistic-part">
+                    <h5>market value of your car</h5>
+                    <input type="text" id="amount-2" class="range-value" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    <div id="slider-range-min-2"></div>
+                  </div>
+                </div>
               </div>
-              <div class="value-chart">
-
+              <div class="col-md-3">
+                <div class="value-chart">
+                  <span>earn a net amount up</span>
+                  <strong>770000 </strong><small>per year</small>
+                </div> 
               </div>
             </div>
           </div>
@@ -222,7 +246,8 @@
               </div>
             </div>
             <div class="offset-3 col-6 text-center">
-              <button type="button" class="btn send-btn">send request</button>
+              <button type="button" class="btn send-btn" data-toggle="modal"
+              data-target="#requestLong">send request</button>
             </div>
           </div>
           <div class="offset-lg-1 col-lg-6">
@@ -269,11 +294,69 @@
         </div>
       </div>
     </section>
-
     <!-- End Requirements Corporate   Section-->
-    <!-- Start Customer feedback Section-->
-   
-    <!-- End Customer feedback Section-->
+    <!-- Start Benefits of rent car Section-->
+    <section class="Benefits">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-3 col-md-6">
+            <h2>Benefits of renting your car</h2>
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="benefits-items">
+              <div class="item">
+                <div class="icon-item">1.</div>
+                <div class="des-item">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon-item">2.</div>
+                <div class="des-item">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon-item">3.</div>
+                <div class="des-item">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon-item">3.</div>
+                <div class="des-item">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et corporis aspernatur nemo facilis culpa iusto molestias, deserunt in natus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-4 col-3 text-center">
+            <div class="arrows-box">
+              <button type="button" class="btn prev "><i class="fas fa-chevron-left"></i></button>
+              <button type="button" class="btn next " aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <!-- End Benefits of rent car Section-->
     <!-- Start Footer -->
     <footer class="p-x-165">
       <div class="container-fluid">
@@ -1155,8 +1238,10 @@
     <script src="./js/wow.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
-    <script src="./js/jquery.datetimepicker.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.timepicker.js"></script>
     <script src="./js/fileUploader.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
