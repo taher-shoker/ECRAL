@@ -18,7 +18,7 @@
   margin-bottom: 120px;
   text-align: center;
 }
-.wizard > div.wizard-inner.wizard-sign-up{
+.wizard > div.wizard-inner.wizard-sign-up {
   margin-bottom: 50px;
 }
 .wizard-content .rent-form {
@@ -38,7 +38,7 @@
   top: 15px;
   z-index: 1;
 }
-.custom-three{
+.custom-three {
   width: 65%;
   top: 17px;
 }
@@ -91,12 +91,11 @@ span.round-tab {
   color: #fff;
   border-color: #fffdebbd;
 }
-.wizard .three-tabs li.active span.round-tab{
+.wizard .three-tabs li.active span.round-tab {
   background: #daedf4;
 }
-.wizard .three-tabs li.active span.round-tab.colored{
+.wizard .three-tabs li.active span.round-tab.colored {
   background: #fcb040;
-
 }
 .wizard li.active span.round-tab i {
   color: #5bc0de;
@@ -151,11 +150,15 @@ span.round-tab {
 }
 .prev-step,
 .next-step {
-  font-size: 13px;
-  padding: 8px 24px;
+  font-size: 22px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   margin-top: 30px;
+  text-transform: capitalize;
+  background: #85a1aa;
+  width: 180px;
+  color: #fff;
 }
 .next-step {
   background-color: #fcb040;
@@ -321,7 +324,9 @@ input[type="checkbox"]:checked::before {
   border-radius: 3px;
   transition: 0.2s;
 }
-
+.btn-controls {
+  justify-content: space-between;
+}
 .choose-file-button {
   flex-shrink: 0;
   background-color: rgba(255, 255, 255, 0.04);
@@ -330,7 +335,7 @@ input[type="checkbox"]:checked::before {
   padding: 8px 15px;
   margin-right: 10px;
   font-size: 12px;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .file-message {
@@ -339,7 +344,7 @@ input[type="checkbox"]:checked::before {
   line-height: 1.4;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
 }
 
 .file-input {
@@ -349,11 +354,11 @@ input[type="checkbox"]:checked::before {
   height: 100%;
   width: 100%;
   cursor: pointer;
-  opacity: 0
+  opacity: 0;
 }
 
 .mt-100 {
-  margin-top: 100px
+  margin-top: 100px;
 }
 @media (max-width: 767px) {
   .sign-content h3 {

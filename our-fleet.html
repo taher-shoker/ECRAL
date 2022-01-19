@@ -11,9 +11,18 @@
     <link rel="stylesheet" href="./css/all.css" />
     <!--=========== Animations Css  ===============-->
     <link rel="stylesheet" href="./css/animate.css" />
-         <!--=========== Date Picker Css  ===============-->
-         <link rel="stylesheet" href="./css/jquery.datetimepicker.css" />
+    <!--=========== Date Picker Css  ===============-->
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" href="./css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"
+    />
     <!--=========== Main CSS Style ===============-->
+    <link rel="stylesheet" href="./css/fileUploader.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/wizard.css" />
   </head>
@@ -46,26 +55,33 @@
               <img src="./imgs/icon.png" alt="" /> menu
             </button>
             <div id="signIn_btn">
-              <a href="#" class="register">sign in</a>  
-                <div class="drop-down-sign-in">
-                  <strong>great to see you! </strong>
-                  <div class="exclusive">
-                    <a href="#" data-toggle="modal"
-                    data-target="#signUp"  >Sign Up</a> to get exclusive Deals & offers
-                  </div>
-                  <p>
-                    already have an Account 
-                    <a href="#" data-toggle="modal"
-                    data-target="#signIn">sign in</a>
-                  </p>
+              <a href="#" class="register">sign in</a>
+              <div class="drop-down-sign-in">
+                <strong>great to see you! </strong>
+                <div class="exclusive">
+                  <a href="#" data-toggle="modal" data-target="#signUp"
+                    >Sign Up</a
+                  >
+                  to get exclusive Deals & offers
                 </div>
+                <p>
+                  already have an Account
+                  <a href="#" data-toggle="modal" data-target="#signIn"
+                    >sign in</a
+                  >
+                </p>
               </div>
+            </div>
             <div class="group-btns">
               <a href="rent-car.html" class="rental-btn hvr-fade">
                 Rent a Car
               </a>
-              <a type="/" class="long-rental hvr-fade"    data-toggle="modal"
-              data-target="#packages">
+              <a
+                type="/"
+                class="long-rental hvr-fade"
+                data-toggle="modal"
+                data-target="#packages"
+              >
                 Long Term Rent
               </a>
             </div>
@@ -90,7 +106,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-md-6">
             <div class="sign-img">
               <img
@@ -99,7 +115,7 @@
               />
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="offset-md-1 col-md-5">
             <div class="right_fleet_header">COMPATC SUV SIZE VEICHLE</div>
             <p class="right_fleet_content">Hunda Tucson or simlar</p>
             <p class="right_fleet_content">Models: 2017 - 2019</p>
@@ -188,11 +204,15 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="offset-3 col-6 text-center">
+        <div class="row mt-4">
+          <div class="offset-md-3 col-md-6 text-center">
             <div class="arrows-box">
-              <button type="button" class="btn prev "><i class="fas fa-chevron-left"></i></button>
-              <button type="button" class="btn next  "><i class="fas fa-chevron-right"></i></button>
+              <button type="button" class="btn prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button type="button" class="btn next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -268,7 +288,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-12 col-lg-5 mb-6 mb-lg-0">
+          <div class="col-md-12 offset-lg-1 col-lg-4 mb-6 mb-lg-0">
             <h4 class="text-white fs-16 my-4 font-weight-500">
               Subscribe To Our Newsletter
             </h4>
@@ -277,13 +297,7 @@
                 <input
                   type="email"
                   name="email"
-                  class="
-                    form-control
-                    bg-white
-                    shadow-none
-                    rounded-pill
-                    z-index-1
-                  "
+                  class="form-control bg-white shadow-none rounded-pill z-index-1"
                   placeholder="Type Your mail"
                 />
                 <div class="input-group-append">
@@ -303,7 +317,7 @@
       </div>
     </footer>
     <!-- End Footer-->
-      <!-- Start Menu Modal -->
+    <!-- Start Menu Modal -->
     <!-- Modal -->
     <div
       class="modal fade menu-comprased main-menu"
@@ -315,7 +329,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content height-auto">
           <div class="modal-header">
             <button
               type="button"
@@ -329,8 +343,25 @@
           <div class="modal-body">
             <div class="container">
               <div class="row">
-                <div class="col-lg-4">
-                  <ul>
+                <div class="col-12">
+                  <div class="group-btns mobile-show">
+                    <a href="rent-car.html" class="rental-btn hvr-fade">
+                      Rent a Car
+                    </a>
+                    <a
+                      type="/"
+                      class="long-rental hvr-fade"
+                      data-toggle="modal"
+                      data-target="#packages"
+                    >
+                      Long Term Rent
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <ul class="first-links">
                     <li class=""><a href="index.html" class="">home</a></li>
                     <li class="">
                       <a href="visions&missions.html" class=""
@@ -354,7 +385,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <ul>
                     <li class=""><a href="FAQs.html" class="">FAQS</a></li>
                     <li class=""><a href="blog.html" class="">blog</a></li>
@@ -371,7 +402,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <h3>help ?</h3>
                   <ul>
                     <li class="">
@@ -393,108 +424,8 @@
           </div>
         </div>
       </div>
-    </div>  <div
-    class="modal fade menu-comprased main-menu"
-    id="menu-box"
-    data-backdrop="static"
-    data-keyboard="false"
-    tabindex="-1"
-    aria-labelledby="staticBackdropLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="group-btns mobile-show">
-                  <a href="rent-car.html" class="rental-btn hvr-fade">
-                    Rent a Car
-                  </a>
-                  <a type="/" class="long-rental hvr-fade"    data-toggle="modal"
-                  data-target="#packages">
-                    Long Term Rent
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <ul class="first-links">
-                  <li class=""><a href="index.html" class="">home</a></li>
-                  <li class="">
-                    <a href="visions&missions.html" class=""
-                      >mission & vision</a
-                    >
-                  </li>
-                  <li class="">
-                    <a href="our-fleet.html" class="">our fleet</a>
-                  </li>
-                  <li class="">
-                    <a href="corporate.html" class="">corporate services</a>
-                  </li>
-                  <li class="">
-                    <a href="limousine.html" class="">limousine services</a>
-                  </li>
-                  <li class="">
-                    <a href="list-your-car.html" class="">list your car</a>
-                  </li>
-                  <li class="">
-                    <a href="partners.html" class="">partners</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <ul>
-                  <li class=""><a href="FAQs.html" class="">FAQS</a></li>
-                  <li class=""><a href="blog.html" class="">blog</a></li>
-                  <li class="">
-                    <a href="join-team.html" class="">join ECRAL team</a>
-                  </li>
-                  <li class="">
-                    <a href="get-touch.html" class="">get in touch</a>
-                  </li>
-                  <li class="">
-                    <a href="terms&conditions.html" class=""
-                      >terms & conditions</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <h3>help ?</h3>
-                <ul>
-                  <li class="">
-                    <p>e-mail</p>
-                    <span>example@ercal.com</span>
-                  </li>
-                  <li class="">
-                    <p>mobile</p>
-                    <span>+2 01009582340</span>
-                  </li>
-                  <li class="">
-                    <p>fax</p>
-                    <span>+2 01009582340</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+
     <!--End Menu Modal-->
     <!-- Start SignIn Modal -->
     <div
@@ -620,15 +551,23 @@
                   <div class="row">
                     <div class="col-lg-4">
                       <h2 class="form-title">Sign in</h2>
-                      <section class="wizard-content wizard-sign-up ">
+                      <section class="wizard-content wizard-sign-up">
                         <div class="container">
                           <div class="row d-flex justify-content-center">
                             <div class="col-md-12">
-                              <div class="wizard ">
-                                <div class="wizard-inner ">
-                                  <div class="connecting-line custom-three"></div>
-                                  <ul class="nav nav-tabs three-tabs" role="tablist">
-                                    <li role="presentation" class="disabled active">
+                              <div class="wizard">
+                                <div class="wizard-inner">
+                                  <div
+                                    class="connecting-line custom-three"
+                                  ></div>
+                                  <ul
+                                    class="nav nav-tabs three-tabs"
+                                    role="tablist"
+                                  >
+                                    <li
+                                      role="presentation"
+                                      class="disabled active"
+                                    >
                                       <a
                                         href="#step1"
                                         data-toggle="tab"
@@ -641,7 +580,9 @@
                                             alt=""
                                           />
                                         </span>
-                                        <small class="subtitle">Personal Info</small>
+                                        <small class="subtitle"
+                                          >Personal Info</small
+                                        >
                                         <i class="dot"></i
                                       ></a>
                                     </li>
@@ -657,7 +598,9 @@
                                             src="./imgs/wizared-icon/passport.png"
                                             alt=""
                                         /></span>
-                                        <small class="subtitle">ID / Passport</small>
+                                        <small class="subtitle"
+                                          >ID / Passport</small
+                                        >
                                         <i class="dot"></i
                                       ></a>
                                     </li>
@@ -671,7 +614,9 @@
                                           ><img
                                             src="./imgs/wizared-icon/license.png"
                                             alt="" /></span
-                                        ><small class="subtitle">Driving License</small>
+                                        ><small class="subtitle"
+                                          >Driving License</small
+                                        >
                                         <i class="dot"></i
                                       ></a>
                                     </li>
@@ -682,24 +627,27 @@
                             <div class="col-md-12">
                               <div class="login-box">
                                 <div class="tab-content" id="main_form">
-                                  <div class="tab-pane active" role="tabpanel" id="step1">
-                                    <div class="signup-form " >
-                                    
+                                  <div
+                                    class="tab-pane active"
+                                    role="tabpanel"
+                                    id="step1"
+                                  >
+                                    <div class="signup-form">
                                       <form
                                         method="POST"
                                         class="register-form pt-0"
                                         id="register-form"
                                       >
-                                      <div class="form-group">
-                                        <label for="email">Full Name *</label>
-                                        <i class="far fa-user"></i>
-                                        <input
-                                          type="text"
-                                          name="full-name"
-                                          id="full-name"
-                                          placeholder="Full Name "
-                                        />
-                                      </div>
+                                        <div class="form-group">
+                                          <label for="email">Full Name *</label>
+                                          <i class="far fa-user"></i>
+                                          <input
+                                            type="text"
+                                            name="full-name"
+                                            id="full-name"
+                                            placeholder="Full Name "
+                                          />
+                                        </div>
                                         <div class="form-group">
                                           <label for="email">Email *</label>
                                           <i class="far fa-envelope"></i>
@@ -713,7 +661,7 @@
                                         <div class="form-group">
                                           <label for="email">Mobile *</label>
                                           <i class="fas fa-mobile-alt"></i>
-                                           <input
+                                          <input
                                             type="text"
                                             name="phone"
                                             id="phone"
@@ -731,68 +679,134 @@
                                           />
                                         </div>
                                       </form>
-                            
                                     </div>
-                  
-                                    <ul class="list-inline pull-right d-flex  align-items-center">
+
+                                    <ul
+                                      class="list-inline pull-right d-flex align-items-center"
+                                    >
                                       <li>
-                                        <button type="button" class="default-btn next-step">
-                                         next 
+                                        <button
+                                          type="button"
+                                          class="default-btn next-step"
+                                        >
+                                          next
                                         </button>
                                       </li>
                                     </ul>
                                   </div>
-                                  <div class="tab-pane" role="tabpanel" id="step2">
+                                  <div
+                                    class="tab-pane"
+                                    role="tabpanel"
+                                    id="step2"
+                                  >
                                     <div class="row">
                                       <div class="col-md-12">
-                                        <label >ID / Passport *</label>
-                                        <div class="alert alert-danger" role="alert">
-                                          you driving license must be valid 
+                                        <label>ID / Passport *</label>
+                                        <div
+                                          class="alert alert-danger"
+                                          role="alert"
+                                        >
+                                          you driving license must be valid
                                         </div>
-                                        <div class="file-drop-area"> <span class="choose-file-button">Choose files</span> <span class="file-message">or drag and drop files here</span> <input class="file-input" type="file" multiple>
+                                        <div class="file-drop-area">
+                                          <span class="choose-file-button"
+                                            >Choose files</span
+                                          >
+                                          <span class="file-message"
+                                            >or drag and drop files here</span
+                                          >
+                                          <input
+                                            class="file-input"
+                                            type="file"
+                                            multiple
+                                          />
                                         </div>
                                       </div>
-                                    
                                     </div>
-                  
-                                    <ul class="list-inline pull-right d-flex  align-items-center">
+
+                                    <ul
+                                      class="list-inline pull-right d-flex align-items-center"
+                                    >
                                       <li>
-                                        <button type="button" class="default-btn prev-step">
+                                        <button
+                                          type="button"
+                                          class="default-btn prev-step"
+                                        >
                                           Back
                                         </button>
                                       </li>
                                       <li>
-                                        <button type="button" class="default-btn next-step">
+                                        <button
+                                          type="button"
+                                          class="default-btn next-step"
+                                        >
                                           Continue
                                         </button>
                                       </li>
                                     </ul>
                                   </div>
-                                  <div class="tab-pane" role="tabpanel" id="step3">
+                                  <div
+                                    class="tab-pane"
+                                    role="tabpanel"
+                                    id="step3"
+                                  >
                                     <div class="row">
                                       <div class="col-md-12">
-                                        <label >Driving license  *</label>
-                                        <div class="alert alert-danger" role="alert">
-                                          you driving license must be valid 
+                                        <label>Driving license *</label>
+                                        <div
+                                          class="alert alert-danger"
+                                          role="alert"
+                                        >
+                                          you driving license must be valid
                                         </div>
-                                        <div class="file-drop-area"> <span class="choose-file-button">Choose files</span> <span class="file-message">or drag and drop files here</span> <input class="file-input" type="file" multiple>
+                                        <div class="file-drop-area">
+                                          <span class="choose-file-button"
+                                            >Choose files</span
+                                          >
+                                          <span class="file-message"
+                                            >or drag and drop files here</span
+                                          >
+                                          <input
+                                            class="file-input"
+                                            type="file"
+                                            multiple
+                                          />
                                         </div>
                                         <div class="custom-check">
-                                          <input class="custom-check-input" id="someCheckte" name="someCheck" type="checkbox">
-                                          <label class="custom-check-elem" for="someCheckte"></label>
-                                          <label class="custom-check-label" for="someCheckte">by sign up you </label>
+                                          <input
+                                            class="custom-check-input"
+                                            id="someCheckte"
+                                            name="someCheck"
+                                            type="checkbox"
+                                          />
+                                          <label
+                                            class="custom-check-elem"
+                                            for="someCheckte"
+                                          ></label>
+                                          <label
+                                            class="custom-check-label"
+                                            for="someCheckte"
+                                            >by sign up you
+                                          </label>
                                         </div>
                                       </div>
-                                    
                                     </div>
-                                    <ul class="list-inline pull-right d-flex  align-items-center">
+                                    <ul
+                                      class="list-inline pull-right d-flex align-items-center"
+                                    >
                                       <li>
-                                        <button type="button" class="default-btn prev-step">
+                                        <button
+                                          type="button"
+                                          class="default-btn prev-step"
+                                        >
                                           Back
                                         </button>
                                       </li>
                                       <li>
-                                        <button type="button" class="default-btn next-step">
+                                        <button
+                                          type="button"
+                                          class="default-btn next-step"
+                                        >
                                           sign up
                                         </button>
                                       </li>
@@ -819,245 +833,251 @@
         </div>
       </div>
     </div>
-        <!-- Start Request Long term Modal -->
-        <div
-        class="modal fade menu-comprased"
-        id="requestLong"
-        data-backdrop="static"
-        data-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <section class="sign-in p-x-165">
-                <div class="container-fluid">
-                  <div class="sign-in-content">
-                    <div class="row">
-                      <div class="col-lg-5">
-                        <div class="signup-form">
-                          <h2 class="form-title">long term rent</h2>
-                          <form
-                            method="POST"
-                            class="register-form"
-                            id="register-form"
-                          >
-                            <div class="form-group">
-                              <label for="email">Full Name *</label>
-                              <i class="far fa-user"></i>
-                              <input
-                                type="text"
-                                name="full-name"
-                                id="full-name"
-                                placeholder="Full Name "
-                              />
-                            </div>
-                            <div class="form-group">
-                              <label for="email">Email *</label>
-                              <i class="far fa-envelope"></i>
-                              <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Your Email"
-                              />
-                            </div>
-                            <div class="form-group">
-                              <label for="pass"> password *</label>
-                              <i class="fas fa-lock"></i>
-                              <input
-                                type="password"
-                                name="pass"
-                                id="pass"
-                                placeholder="Password"
-                              />
-                            </div>
-                            <div class="form-group">
-                              <label for="pass"> rent period </label>
-                              <div class="custom_radio">
-                                <div class="radio-item">
-                                  <input
-                                    type="radio"
-                                    id="featured-10"
-                                    name="period"
-                                    checked=""
-                                  /><label for="featured-10"> 3-5 months</label>
-                                </div>
-                                <div class="radio-item">
-                                  <input
-                                    type="radio"
-                                    id="featured-11"
-                                    name="period"
-                                  /><label for="featured-11"> 6-11 months</label>
-                                </div>
-                                <div class="radio-item">
-                                  <input
-                                    type="radio"
-                                    id="featured-12"
-                                    name="period"
-                                  /><label for="featured-12"> 12+ months</label>
-                                </div>
+    <!-- Start Request Long term Modal -->
+    <div
+      class="modal fade menu-comprased"
+      id="requestLong"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section class="sign-in p-x-165">
+              <div class="container-fluid">
+                <div class="sign-in-content">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="signup-form">
+                        <h2 class="form-title">long term rent</h2>
+                        <form
+                          method="POST"
+                          class="register-form"
+                          id="register-form"
+                        >
+                          <div class="form-group">
+                            <label for="email">Full Name *</label>
+                            <i class="far fa-user"></i>
+                            <input
+                              type="text"
+                              name="full-name"
+                              id="full-name"
+                              placeholder="Full Name "
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email *</label>
+                            <i class="far fa-envelope"></i>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Your Email"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="pass"> password *</label>
+                            <i class="fas fa-lock"></i>
+                            <input
+                              type="password"
+                              name="pass"
+                              id="pass"
+                              placeholder="Password"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="pass"> rent period </label>
+                            <div class="custom_radio">
+                              <div class="radio-item">
+                                <input
+                                  type="radio"
+                                  id="featured-10"
+                                  name="period"
+                                  checked=""
+                                /><label for="featured-10"> 3-5 months</label>
+                              </div>
+                              <div class="radio-item">
+                                <input
+                                  type="radio"
+                                  id="featured-11"
+                                  name="period"
+                                /><label for="featured-11"> 6-11 months</label>
+                              </div>
+                              <div class="radio-item">
+                                <input
+                                  type="radio"
+                                  id="featured-12"
+                                  name="period"
+                                /><label for="featured-12"> 12+ months</label>
                               </div>
                             </div>
-                          </form>
-                          <button type="button" class="btn sign-in-btn">
-                            Send request
-                          </button>
-                        </div>
+                          </div>
+                        </form>
+                        <button type="button" class="btn sign-in-btn">
+                          Send request
+                        </button>
                       </div>
-                      <div class="offset-lg-1 col-lg-6">
-                        <div class="sign-img">
-                          <img
-                            src="./imgs/long-term/request-long-bg.png"
-                            alt="sing up image"
-                          />
-                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-6">
+                      <div class="sign-img">
+                        <img
+                          src="./imgs/long-term/request-long-bg.png"
+                          alt="sing up image"
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-            </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
+    </div>
     <!-- Start Packages Modal -->
     <div
-    class="modal fade menu-comprased"
-    id="packages"
-    data-backdrop="static"
-    data-keyboard="false"
-    tabindex="-1"
-    aria-labelledby="staticBackdropLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <section class="packages mt-0 ">
-            <div class="container">
-              <div class="row">
-                <div class="offset-lg-3 col-lg-6 text-center">
-                  <h2>choose your packages</h2>
+      class="modal fade menu-comprased"
+      id="packages"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section class="packages mt-0">
+              <div class="container">
+                <div class="row">
+                  <div class="offset-lg-3 col-lg-6 text-center">
+                    <h2>choose your packages</h2>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="packages-box with-img">
-                    <div class="item">
-                      <h5>stander</h5>
-                      <div class="icon-item">
-                        <img src="./imgs/car1.png" alt="" />
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="packages-box with-img">
+                      <div class="item">
+                        <h5>stander</h5>
+                        <div class="icon-item">
+                          <img src="./imgs/car1.png" alt="" />
+                        </div>
+                        <div class="price-info">
+                          <p>starting from</p>
+                          <strong>20000</strong>/<small>month</small>
+                        </div>
+                        <ul>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="price-info">
-                        <p>starting from</p>
-                        <strong>20000</strong>/<small>month</small>
+                      <div class="item">
+                        <h5>premium</h5>
+                        <div class="icon-item">
+                          <img src="./imgs/car2.png" alt="" />
+                        </div>
+                        <div class="price-info">
+                          <p>starting from</p>
+                          <strong>20000</strong>/<small>month</small>
+                        </div>
+                        <ul>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                        </ul>
+                        <button
+                          type="button"
+                          id="choosePackage"
+                          class="btn choose-package"
+                        >
+                          choose
+                        </button>
                       </div>
-                      <ul>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="item">
-                      <h5>premium</h5>
-                      <div class="icon-item">
-                        <img src="./imgs/car2.png" alt="" />
+                      <div class="item">
+                        <h5>luxury</h5>
+                        <div class="icon-item">
+                          <img src="./imgs/car3.png" alt="" />
+                        </div>
+                        <div class="price-info">
+                          <p>starting from</p>
+                          <strong>20000</strong>/<small>month</small>
+                        </div>
+                        <ul>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                          <li>
+                            <span>Lorem, ipsum.</span>
+                            <span><i class="fas fa-check"></i></span>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="price-info">
-                        <p>starting from</p>
-                        <strong>20000</strong>/<small>month</small>
-                      </div>
-                      <ul>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                      </ul>
-                      <button type="button" id="choosePackage" class="btn choose-package" >choose</button>
-                    </div>
-                    <div class="item">
-                      <h5>luxury</h5>
-                      <div class="icon-item">
-                        <img src="./imgs/car3.png" alt="" />
-                      </div>
-                      <div class="price-info">
-                        <p>starting from</p>
-                        <strong>20000</strong>/<small>month</small>
-                      </div>
-                      <ul>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                        <li>
-                          <span>Lorem, ipsum.</span>
-                          <span><i class="fas fa-check"></i></span>
-                        </li>
-                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <!--================================== Jquery CDN Links & bootstap Links ========================================-->
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery-1.11.1.min.js"></script>
@@ -1065,7 +1085,11 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/jquery.datetimepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.timepicker.js"></script>
+    <script src="./js/fileUploader.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

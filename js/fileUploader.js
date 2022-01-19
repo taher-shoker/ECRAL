@@ -160,7 +160,7 @@
   
   //init
   $(document).ready(function () {
-    console.log("hi");
+  
     $(".fileUploader").uploader({
       MessageAreaText: ""
     });
