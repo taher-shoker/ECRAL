@@ -1354,6 +1354,7 @@ input[type="range"]::-webkit-slider-thumb {
 .packages-box .item h5 {
   text-transform: capitalize;
   margin-bottom: 16px;
+  font-size: 35px;
 }
 .packages-box .item .icon-item {
   width: 200px;
@@ -1400,6 +1401,29 @@ input[type="range"]::-webkit-slider-thumb {
   padding-top: 70px;
   color: rgb(255, 255, 255);
   background-position: center center;
+}
+.requirements-co .styled-checkbox:checked + label::before{
+  background-color: #fff;
+}
+.requirements-co .ui-widget-header{
+  background-color: #fcb040;
+}
+.requirements-co .ui-widget.ui-widget-content{
+  border-color: #fcb040;
+  border-radius: 20px;
+}
+.requirements-co .ui-slider .ui-slider-handle{
+  width: 2rem;
+  height: 2rem;
+  top: -12px;
+  background: #fcb040;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  line-height: 5;
+  color: #fff;
+}
+.requirements-co .ui-slider .ui-slider-handle:focus{
+  outline: none;
 }
 .list-car-form {
   background-image: url("../imgs/list-car/List-Your-Car-form.png");
@@ -2774,6 +2798,7 @@ footer .about-links li a {
 .Benefits {
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow-x: hidden;
 }
 .Benefits h2 {
   text-align: center;
@@ -2912,6 +2937,45 @@ footer .about-links li a {
   z-index: 999;
   font-weight: 900;
   font-size: 24px;
+}
+.offer-includes li small{
+  position: relative;
+}
+.offer-includes li .location-icon::after{
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  color: rgb(108 146 159);
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  z-index: 999;
+  font-weight: 900;
+  font-size: 16px;
+}
+.offer-includes li .date-icon{
+  width: 45%;
+}
+.offer-includes li .date-icon::after{
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  color: rgb(108 146 159);
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  z-index: 999;
+  font-weight: 900;
+  font-size: 16px;
+}
+.offer-includes li .time-icon::after{
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  color: rgb(108 146 159);
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  z-index: 999;
+  font-weight: 900;
+  font-size: 16px;
 }
 .offer-includes span {
   font-size: 22px;
@@ -3108,6 +3172,7 @@ footer .about-links li a {
   }
   body {
     zoom: 66%;
+    overflow-x: hidden;
   }
 }
 @media (min-width: 1024px) and (max-width: 1750px) {

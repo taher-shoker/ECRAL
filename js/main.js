@@ -213,3 +213,36 @@ $(document).ready(function () {
     ],
   });
 });
+
+// $( function() {
+//   var handle = $( "#custom-handle" );
+//   $( "#slider-kilometers" ).slider({
+//     create: function() {
+//       handle.text( $( this ).slider( "value" ) );
+//     },
+//     slide: function( event, ui ) {
+//       handle.text( ui.value );
+//     }
+//   });
+// } );
+
+$( function() {
+  var handle = $( "#custom-handle" );
+
+$( "#slider-kilometers" ).slider({
+  value: 60,
+  orientation: "horizontal",
+  range: "min",
+  min: 1000,
+  max: 10000,
+  step: 1000,
+  animate: true,
+  create: function() {
+          handle.text( $( this ).slider( "value" ) );
+        },
+        slide: function( event, ui ) {
+          handle.text( ui.value );
+        }
+  
+});
+} );
