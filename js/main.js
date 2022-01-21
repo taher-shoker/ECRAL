@@ -246,3 +246,15 @@ $( "#slider-kilometers" ).slider({
   
 });
 } );
+
+$("#booking-now").click(function () {
+  Swal.fire({
+    position: 'top',
+    showCloseButton: true,
+  showCancelButton: false,
+  focusConfirm: false,
+    icon: 'success',
+    title: 'Your Booking Request Has Been Successfully',
+    text: 'Our Customer Services Will Contact You Within 12 Hours ',
+  })
+});

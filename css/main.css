@@ -3019,6 +3019,16 @@ footer .about-links li a {
   height: 100%;
   object-fit: cover;
 }
+.swal2-icon.swal2-success [class^=swal2-success-line]{
+  background-color: #fff !important;
+  z-index: 3 !important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+  background: #75e6b2;
+}
+.swal2-popup{
+  width: auto !important;
+}
 @media (min-width: 320px) {
 }
 @media (min-width: 375px) {
