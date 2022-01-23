@@ -441,6 +441,7 @@ nav .nav-links a {
 .menu-comprased .modal-header span {
   font-size: 80px;
   margin-right: 50px;
+  color: #185a70;
 }
 .menu-comprased.main-menu ul li {
   margin: 16px auto;
@@ -465,6 +466,8 @@ nav .nav-links a {
   text-transform: capitalize;
   padding: 10px 0px;
   font-size: 22px;
+  color: #185a70;
+  opacity: 1 !important;
 }
 .rent-form {
   background-color: rgb(255, 255, 255);
@@ -2692,6 +2695,14 @@ footer .about-links li a {
 }
 .faqs .card-header {
   padding: 0px;
+}
+#addQuestion .modal-content{
+  margin: auto;
+  width: 80%;
+  border-radius: 2rem;
+}
+#addQuestion .modal-header span{
+  margin-right: 10px;
 }
 
 .rent-out-car {
