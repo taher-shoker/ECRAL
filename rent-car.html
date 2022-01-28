@@ -955,8 +955,8 @@
                             <span class="with-close">300 EGP</span>
                           </div>
                           <div class="check-view mt-4 justify-content-start">
-                            <input type="checkbox" class="" />
-                            <label>I agree to the terms & conditions </label>
+                            <input type="checkbox" class="" data-toggle="modal" data-target="#terms-condination" />
+                            <label data-toggle="modal" data-target="#terms-condination">I agree to the terms & conditions </label>
                           </div>
                           <div class="check-view flex-column mt-4">
                             <button class="check-btn">check out</button>
@@ -2188,6 +2188,57 @@
             </section>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Condition & terms Modal -->
+    <div class="modal fade" id="terms-condination" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog w-100  h-100 m-0">
+        <div class="modal-content h-100">
+         
+          <div class="modal-body d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="modal-header">
+                    <h5 class="modal-title with-arrow" id="exampleModalLabel">terms & conditions</h5>
+                    <button type="button" class="close font-70 primary-color" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="text-pragraph">
+                    <p class="text-center mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum reprehenderit mollitia voluptatum commodi tempora modi pariatur animi id officia ipsam esse harum ea aperiam, reiciendis odit dolore eum sequi. dolore eum sequi. dolore eum 
+                    </p>
+                    <p class="text-center mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum reprehenderit mollitia voluptatum commodi tempora modi pariatur animi id officia ipsam esse harum ea aperiam, reiciendis odit dolore eum sequi. dolore eum sequi. dolore eum 
+                    </p>
+                    <p class="text-center mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum reprehenderit mollitia voluptatum commodi tempora modi pariatur animi id officia ipsam esse harum ea aperiam, reiciendis odit dolore eum sequi. dolore eum sequi. dolore eum 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="offset-md-2 col-md-8">
+                  <div class="form-check form-check-inline">
+                    <input class="styled-checkbox condition-check" id="styled-checkbox-20" type="checkbox" value="value3">
+                    <label for="styled-checkbox-20" >I have read and agree with the terms and conditions </label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="offset-md-2 col-md-8">
+             
+                  <button class="btn btn-agree"> agree and continue </button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
     <!--================================== Jquery CDN Links & bootstap Links ========================================-->

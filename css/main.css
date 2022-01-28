@@ -2115,7 +2115,6 @@ footer .about-links li a {
 .blog-details h1 {
   color: rgb(24, 90, 112);
   margin: 5px 0px;
-  font-size: 48px;
   font-weight: bold;
 }
 .blog-details p {
@@ -2360,6 +2359,9 @@ footer .about-links li a {
   min-height: 700px;
   padding-top: 40px;
 }
+.box-checkout .check-item label{
+  margin-bottom: -8px;
+}
 .box-checkout .box1 {
   background-color: rgb(10, 52, 66);
   color: rgb(255, 255, 255);
@@ -2572,7 +2574,7 @@ footer .about-links li a {
   background: rgb(10, 52, 66);
 }
 .styled-checkbox.condition-check:hover + label::before {
-  background: rgb(10, 52, 66);
+  /* background: rgb(10, 52, 66); */
 }
 .styled-checkbox.condition-check:checked + label::before {
   background: rgb(10, 52, 66);
