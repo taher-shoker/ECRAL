@@ -1045,9 +1045,9 @@ input[type="range"]::-webkit-slider-thumb {
 .rent-now ul#pills-tab .nav-link.active span:first-of-type {
   color: rgb(255, 255, 255);
   background-color: rgb(252, 176, 64) !important;
-  width: 70px !important;
-  height: 70px !important;
-  line-height: 70px !important;
+  /* width: 70px !important; */
+  /* height: 70px !important; */
+  /* line-height: 70px !important; */
 }
 .rent-now ul#pills-tab .nav-link.active span:last-of-type {
   color: rgb(255, 255, 255);
@@ -1063,8 +1063,8 @@ input[type="range"]::-webkit-slider-thumb {
 .rent-now ul#pills-tab li:hover span:first-of-type {
   color: rgb(255, 255, 255);
   background-color: rgb(252, 176, 64) !important;
-  width: 70px !important;
-  height: 70px !important;
+  /* width: 70px !important; */
+  /* height: 70px !important; */
   line-height: 70px !important;
 }
 .styled-checkbox {
@@ -3284,6 +3284,9 @@ footer .about-links li a {
 
   .menu-comprased .modal-dialog {
     height: 100%;
+  }
+  .pl-100{
+    padding-left: 100px !important;
   }
   body {
     zoom: 66%;
