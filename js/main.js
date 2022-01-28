@@ -108,21 +108,32 @@ $("#signIn_btn").click(function () {
   $(".drop-down-sign-in").toggle();
 });
 
-// $(document).on('change', '.file-input', function() {
-//   var filesCount = $(this)[0].files.length;
-
-//   var textbox = $(this).prev();
-
-//   if (filesCount === 1) {
-//   var fileName = $(this).val().split('\\').pop();
-//   textbox.text(fileName);
-//   } else {
-//   textbox.text(filesCount + ' files selected');
-//   }
-//   });
 
 $(function () {
-  $(".date-input").datepicker();
+  $("#date_pick_up").datepicker({
+    format: 'dd-mm-yyyy',
+    autoclose: true,
+    calendarWeeks : false,
+    clearBtn: true,
+    disableTouchKeyboard: true,
+     modal: true,
+    });
+    $("#drop_off").datepicker({
+      format: 'dd-mm-yyyy',
+      autoclose: true,
+      calendarWeeks : false,
+      clearBtn: true,
+      disableTouchKeyboard: true
+      });
+      $("#return-date").datepicker({
+        format: 'dd-mm-yyyy',
+        autoclose: true,
+        calendarWeeks : false,
+        clearBtn: true,
+        disableTouchKeyboard: true
+        });
+   
+    
 });
 $(".time-input").timepicker({
   timeFormat: "h:mm p",
@@ -214,17 +225,7 @@ $(document).ready(function () {
   });
 });
 
-// $( function() {
-//   var handle = $( "#custom-handle" );
-//   $( "#slider-kilometers" ).slider({
-//     create: function() {
-//       handle.text( $( this ).slider( "value" ) );
-//     },
-//     slide: function( event, ui ) {
-//       handle.text( ui.value );
-//     }
-//   });
-// } );
+
 
 $( function() {
   var handle = $( "#custom-handle" );
@@ -258,3 +259,17 @@ $("#booking-now").click(function () {
     text: 'Our Customer Services Will Contact You Within 12 Hours ',
   })
 });
+
+$( function() {
+  $( "#slider-range-filter" ).slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [ 75, 300 ],
+    slide: function( event, ui ) {
+      $( "#amount" ).val(  ui.values[ 0 ] +"L.E" + "   "+ ui.values[ 1 ] + "L.E"  );
+    }
+  });
+  $( "#amount" ).val(  $( "#slider-range-filter" ).slider( "values", 0 ) +" L.E"  +
+    " - " + $( "#slider-range-filter" ).slider( "values", 1 ) + " L.E"  );
+} );

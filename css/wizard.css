@@ -356,7 +356,27 @@ input[type="checkbox"]:checked::before {
   cursor: pointer;
   opacity: 0;
 }
+.custom-pay-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h4{
+  font-size: 30px;
+}
+.confirm-tab h4{
+  font-size: 22px;
+}
 
+.confirm-tab svg#Capa_1 {
+  fill: #fcb040;
+  height: 37px;
+  font-weight: 900;
+  font-size: 89px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
 .mt-100 {
   margin-top: 100px;
 }
