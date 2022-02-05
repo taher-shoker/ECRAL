@@ -67,8 +67,8 @@
     });
   }
 
-  if ($(".top-seelling-dashboard-chart").length) {
-    $(".top-seelling-dashboard-chart").sparkline('html', {
+  if ($(".top-seelling-dashboard.html-chart").length) {
+    $(".top-seelling-dashboard.html-chart").sparkline('html', {
       enableTagOptions: true,
       width: '100%',
       barWidth: 30,
