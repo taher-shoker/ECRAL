@@ -61,8 +61,8 @@
     -ms-transition: width $action-transition-duration $action-transition-timing-function;
     color: $navbar-menu-color;
     padding-left: 15px;
-    padding-right: 150px;
-    padding-top: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
     width: 100%;
     height: $navbar-height;
     .rtl & {
@@ -74,16 +74,24 @@
       width: auto;
       padding-left: 15px;
       padding-right: 15px;
+      padding-top: 0;
     }
     .navbar-toggler {
       border: 0;
-      color: $text-muted;
-      height: $navbar-height;
+      color: $navbar-menu-color;
+      display: flex;
+      align-items: center;
       &:focus {
         box-shadow: none
       }
+      & img{
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
       & span{
-        padding-top: 5px
+        padding-top: 5px;
+        margin: 0 12px
       }
       @include border-radius(0px);
       &:not(.navbar-toggler-right) {
@@ -185,18 +193,24 @@
           }
           .navbar-profile {
             display: flex;
-            font-weight: normal;
+            font-weight: bold;
             align-items: center;
+            background: $navbar-profile-bg;
+            color: #fff;
+            border-radius: 1.5rem;
+            padding: 1rem 2rem;
             .navbar-profile-name {
               white-space: nowrap;
-              margin-left: 1rem;
             }
             i {
-              color: #a7afb7;
+              color: #fff;
             }
           }
           &.create-new-button {
-            padding: 0.375rem 0.75rem;
+            padding: 1rem 2rem;
+            border-radius: 1.5rem;
+            color: $navbar-menu-color;
+            border-color: $navbar-long-term-border-color;
           }
         }
         &.dropdown {
@@ -212,15 +226,16 @@
             border: none;
             @include border-radius(4px);
             &.navbar-dropdown {
+              min-width: 250px;
               position: absolute;            
               font-size: 0.9rem;
               margin-top: 0;
-              top: 48px;
-              right: 0;
+              right: 20px;
+              // border: 1px solid $navbar-long-term-border-color;
               left: auto;
-              -webkit-box-shadow: 0px 0px 35px -3px #0a344238;
-              -moz-box-shadow: 0px 0px 35px -3px #0a344238;
-              box-shadow: 0px 0px 35px -3px #0a344238;
+              -webkit-box-shadow: 0px 0px 12px -2px #0a344238;
+              -moz-box-shadow: 0px 0px 12px -2px #0a344238;
+              box-shadow: 0px 0px 12px -2px #0a344238;
               .rtl & {
                 right: auto;
                 left: 0;
@@ -234,10 +249,10 @@
                 padding: 11px 13px;
                 cursor: pointer;
                 &:hover {
-                  color: #fff;
+                  color: $navbar-profile-bg;
                 }
                 i {
-                  font-size: 17px;
+                  font-size: 30px;
                 }
                 .ellipsis {
                   max-width: 200px;

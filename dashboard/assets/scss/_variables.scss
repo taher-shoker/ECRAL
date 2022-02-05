@@ -60,7 +60,7 @@ $theme-colors: (
   primary: #0a3442,
   secondary: #e4eaec,
   success: #00d25b,
-  info:  #8f5fe8,
+  info:  transparent,
   warning: #fcb040,
   danger: #fc424a,
   light: $white,
@@ -70,7 +70,7 @@ $theme-colors: (
   $primary: #0a3442;
   $secondary: #e4eaec;
   $success: #00d25b;
-  $info:  #8f5fe8;
+  $info:  transparent;
   $warning: #fcb040;
   $danger: #fc424a;
   $light: $white;
@@ -104,7 +104,7 @@ reddit: #ff4500);
 
 ////////// FONTS//
 
-$type1:     'Rubik', sans-serif;
+$type1:     'Roboto', sans-serif;
 
 ////////// FONT-WEIGHT/////////
 
@@ -149,7 +149,9 @@ $navbar-brand-wrapper-tinted-bg: #fa424a;
 $navbar-height: 70px;
 $navbar-menu-color: #0a3442;
 $navbar-font-size: .9375rem;
-$navbar-icon-font-size: 1.5rem;
+$navbar-icon-font-size: 1.7rem;
+$navbar-long-term-border-color: #a5c1c7;
+$navbar-profile-bg: #fcb040;
 
 ///////// NAVBAR ////////
 
