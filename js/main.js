@@ -107,6 +107,9 @@ $("#signUPForm").click(function () {
 $("#signIn_btn").click(function () {
   $(".drop-down-sign-in").toggle();
 });
+$("#signIn .sign-in-btn").click(function () {
+  window.location.href='../dashboard/index.html'
+});
 
 
 $(function () {

@@ -3508,7 +3508,10 @@ tfoot tr:nth-child(2) th {
   background-color: inherit !important;
   opacity: 1
 }
+.sign-in-btn:hover{
+  color: #0b3543;
 
+}
 @media screen and (max-width: 726px) {
   .datepicker-dropdown.datepicker-orient-right:before {
       right: calc(50% - 6px)
