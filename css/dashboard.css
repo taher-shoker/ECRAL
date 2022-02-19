@@ -1,3 +1,21 @@
+.text-prog{
+  color: #fcb040 !important;
+}
+.text-complte{
+  color: #49e094 !important;
+}
+.text-cancel{
+color:#ff6d6d !important;
+}
+.bg-prog{
+  background-color: #fcb040 !important;
+}
+.bg-complte{
+  background-color: #49e094 !important;
+}
+.bg-cancel{
+background-color:#ff6d6d !important;
+}
 .right-side-info {
   background-color: #f0f7f9;
   margin-top: 11rem;
@@ -13,6 +31,7 @@
   position: relative;
   top: -100px;
 }
+
 .img-svg img {
   width: 100%;
 }
@@ -63,4 +82,214 @@
 }
 .sth-part img {
   width: 100%;
+}
+.dashboard-cards .nav-tabs{
+
+display: flex;
+
+/* width: 75%; */
+
+justify-content: space-between;
+
+border: none;
+
+margin: 0 auto;
+}
+.dashboard-cards .nav-tabs .nav-link{
+  border: 2px solid  #edf6f9;
+  border-radius: 10px;
+}
+.dashboard-cards .nav-tabs .nav-link:hover{
+  background-color: #f2f2f2;
+  box-shadow: 0px 4px 9px #b5c4c9
+
+}
+.dashboard-cards .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+ box-shadow: 0px 4px 9px #b5c4c9
+}
+.dashboard-cards .tab-content{
+  border: none;
+}
+.card-status{
+  display: flex;
+  /* align-items: center; */
+}
+.card-status .icon{width: 50px;height: 50px;background: red;border-radius: 20px;padding: 12px;margin-right: 16px;}
+
+.card-status .icon svg{
+  width: 100%;
+  height: 100%;
+}
+.card-status .icon svg path{
+}
+.card-status .info-status{
+
+padding: 5px;
+}
+.sort-by{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-left: auto;
+  border: 1px solid #b5c4c9;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+.sort-by select{
+  border: none;
+  padding-bottom: 0;
+  text-transform: capitalize;
+  color: #6c929f;
+}
+.card-status .info-status h2{
+  font-weight: bold;
+}
+.card-status .info-status p{
+  color: #6c929f;
+  font-size: 1.2rem;
+  padding: 0;
+}
+.card-status .info-status p span{
+}
+.main-accordion-title{
+  width: 70%;
+  margin-bottom: 10px;
+}
+.main-accordion-title ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mt-ml-2{
+  margin-left: 40px;
+}
+.main-accordion-title ul li{
+  color: #0a3442;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.main-accordion-title ul li span{
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  /* padding: 16px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  line-height: 45px;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.dashboard-cards #nav-progress .card{
+  border-radius: 25px;
+  border: 1px solid #fcb040;
+}
+#nav-progress .card .main-accordion-title ul li span{
+  border: 2px solid #fcb040;
+
+}
+#nav-progress .card .main-accordion-title ul li,#nav-progress .accordion button{
+  color:#fcb040 ;
+  
+}
+.dashboard-cards #nav-complete .card{
+  border-radius: 25px;
+  border: 1px solid #49e094;
+}
+#nav-complete .card .main-accordion-title ul li span{
+  border: 2px solid #49e094;
+
+}
+#nav-complete .card .main-accordion-title ul li,#nav-complete .accordion button{
+  color:#49e094 ;
+  
+}
+.dashboard-cards #nav-cancel .card{
+  border-radius: 25px;
+  border: 1px solid  #ff6d6d;
+}
+#nav-cancel .card .main-accordion-title ul li span{
+  border: 2px solid #ff6d6d;
+
+}
+#nav-cancel .card .main-accordion-title ul li,#nav-cancel .accordion button{
+  color:#ff6d6d ;
+  
+}
+
+.dashboard-cards  .accordion button::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 40px;
+  top: 25px;
+  z-index: 1;
+  text-align: center;
+  pointer-events: none;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-size: 20px;
+}
+.dashboard-cards  .accordion button.collapsed::after {
+  content: "\f078";
+}
+.btn i{
+  margin: 0;
+}
+table {
+  color: rgb(11, 53, 67);
+  margin-top: 40px;
+  /* border: 1px solid #79c3f2; */
+  box-shadow: 0 0 10px #dcd7d7;
+}
+.dashboard-cards  .card{
+  margin-top: 20px;
+}
+.show-invoice {
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  color: #0a3442;
+  border-color: #a5c1c7;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.show-invoice:hover {
+  background-color: #fcb040;
+  color: #fff;
+}
+.card-header{
+  background-color: transparent;
+}
+.dashboard-cards  .accordion button{
+  background-color: #f5f2f2;
+}
+.dashboard-cards  .accordion button.collapsed{
+  background-color: transparent;
+}
+.empty-booking{
+  margin: 3rem auto;
+  text-align: center;
+}
+.empty-booking img{
+  width: 400px;
+  height: 200px;
+}
+
+.empty-booking .message{
+  margin: 2rem 0;
+}
+.empty-booking .message button{
+  width: 300px;
+}
+.empty-booking .message h4 {
+  font-weight: bold;
+}
+.empty-booking .message p {
+  font-size: 1.5rem;
+  color: #6c929f;
+  font-weight: normal;
 }

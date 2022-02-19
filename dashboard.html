@@ -62,7 +62,7 @@
           </a>
         </li>
         <li class="nav-item menu-items">
-          <a class="nav-link" href="pages/myInvoic.html">
+          <a class="nav-link" href="myInvoice.html">
             <span class="menu-icon">
               <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10" width="14" height="10">
                 <style>
@@ -80,7 +80,7 @@
           </a>
         </li>
         <li class="nav-item menu-items">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="savedLater.html">
             <span class="menu-icon">
               <?xml version="1.0" encoding="iso-8859-1"?>
               <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -133,7 +133,7 @@
           </a>
         </li>
         <li class="nav-item menu-items">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="feedBack.html">
             <span class="menu-icon">
               <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
                 <style>
@@ -157,7 +157,7 @@
           </a>
         </li>
         <li class="nav-item menu-items">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="setting.html">
             <span class="menu-icon">
               <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
                 <defs>
@@ -383,18 +383,608 @@
         <div class="content-wrapper">
           <div class="row">
             <div class="col-lg-8 col-md-6">
-              <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-link active" id="nav-progress-tab" data-toggle="tab" href="#nav-progress" role="tab" aria-controls="nav-progress" aria-selected="true">progress</a>
-                  <a class="nav-link" id="nav-complete-tab" data-toggle="tab" href="#nav-complete" role="tab" aria-controls="nav-complete" aria-selected="false">complete</a>
-                  <a class="nav-link" id="nav-cancel-tab" data-toggle="tab" href="#nav-cancel" role="tab" aria-controls="nav-cancel" aria-selected="false">cancel</a>
+              <div class="dashboard-cards">
+                <nav >
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="nav-progress-tab" data-toggle="tab" href="#nav-progress" role="tab" aria-controls="nav-progress" aria-selected="true">
+                      <div class="card-status ">
+                        <div class="icon bg-prog">
+                          <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 9" width="10" height="9"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="m-274-121h960v565h-960z" /></clipPath></defs><style>.s0{fill:#ffffff}</style><g clip-path="url(#cp1)"><path class="s0" d="m9 4.2c0 2.2-1.8 4-4 4c-2.3 0-4.1-1.8-4.1-4c0-2.3 1.8-4.1 4.1-4.1h0.4v3.4c0.2 0.1 0.4 0.4 0.4 0.7c0 0.4-0.4 0.8-0.8 0.8c-0.5 0-0.9-0.4-0.9-0.8c0-0.3 0.2-0.6 0.5-0.7v-0.9c-0.7 0.2-1.3 0.8-1.3 1.6c0 0.9 0.8 1.6 1.7 1.6c0.9 0 1.6-0.7 1.6-1.6c0-0.5-0.2-0.9-0.5-1.2l0.6-0.6c0.4 0.5 0.7 1.1 0.7 1.8c0 1.3-1.1 2.4-2.4 2.4c-1.4 0-2.5-1.1-2.5-2.4c0-1.2 0.9-2.2 2.1-2.4v-0.9c-1.7 0.2-2.9 1.6-2.9 3.3c0 1.8 1.5 3.2 3.3 3.2c1.8 0 3.2-1.4 3.2-3.2c0-0.9-0.3-1.8-0.9-2.3l0.5-0.6c0.8 0.7 1.2 1.7 1.2 2.9z" /></g></svg>
+                        </div>
+                        <div class="info-status">
+                          <h2 class="text-prog">on progress</h2>
+                          <p>
+                            <span class="num">2</span>
+                            <span class="txt">booking on progress</span>
+                          </p>
+                        </div>
+                      </div>
+                      
+                      
+                    </a>
+                    <a class="nav-link" id="nav-complete-tab" data-toggle="tab" href="#nav-complete" role="tab" aria-controls="nav-complete" aria-selected="false">  <div class="card-status ">
+                      <div class="icon bg-complte">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.5 12.5L5.57574 16.5757C5.81005 16.8101 6.18995 16.8101 6.42426 16.5757L9 14" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                          <path d="M16 7L12 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                          <path d="M7 12L11.5757 16.5757C11.8101 16.8101 12.1899 16.8101 12.4243 16.5757L22 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                          </svg>
+                          
+                      </div>
+                      <div class="info-status">
+                        <h2 class="text-complte">completed</h2>
+                        <p>
+                          <span class="num">5</span>
+                          <span class="txt">booking completed</span>
+                        </p>
+                      </div>
+                    </div></a>
+                    <a class="nav-link" id="nav-cancel-tab" data-toggle="tab" href="#nav-cancel" role="tab" aria-controls="nav-cancel" aria-selected="false">  <div class="card-status ">
+                      <div class="icon bg-cancel">
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="m-553-121h960v565h-960z" /></clipPath></defs><style>.s450{fill:#ffffff}</style><g clip-path="url(#cp1)"><path class="s0" d="m5.1 4.6l3.2 3.2l-0.8 0.8l-3.2-3.2l-3.3 3.2l-0.8-0.8l3.2-3.2l-3.2-3.3l0.8-0.8l3.3 3.3l3.2-3.3l0.8 0.8z" /></g></svg>
+                      </div>
+                      <div class="info-status">
+                        <h2 class="text-cancel">cancelled</h2>
+                        <p>
+                          <span class="num">1</span>
+                          <span class="txt">booking cancelled</span>
+                        </p>
+                      </div>
+                    </div></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-progress" role="tabpanel" aria-labelledby="nav-progress-tab">
+                    <div class="sort-by">
+                      <select name="" id="">
+                        <option value="">last 6 months</option>
+                      </select>
+
+                    </div>
+                    <div class="main-accordion-title mt-ml-2">
+                      <ul>
+                        <li>
+                          
+                        </li>
+                        <li>
+                          pick up
+                        </li>
+                        <li>
+                          request
+                        </li>
+                        <li>
+                          total price
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header px-0 py-0 border-0" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              <div class="main-accordion-title">
+                                <ul class="pt-2">
+                                  <li>
+                                   <span>
+                                    <i class="fas fa-check"></i>
+                                   </span> 
+                                  </li>
+                                  <li>
+                                   12/4/2020
+                                  </li>
+                                  <li>
+                                    3564275
+                                  </li>
+                                  <li>
+                                    4000 L.E
+                                  </li>
+                                </ul>
+                              </div>
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" >
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <h4>request details</h4>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">request num</th>
+                                      <th scope="col">First</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">total price</th>
+                                      <td>4000 L.E</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">deposite</th>
+                                      <td>500 L.E</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">amount payable</th>
+                                      <td>3500 L.E</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-md-4">
+                                <h4>car &amp; pick up / drop off details</h4>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">car category</th>
+                                      <th scope="col">sunny or similar</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">year</th>
+                                      <td>2022</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">pick up</th>
+                                      <td>cairo airport</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">date/time</th>
+                                      <td>12-4-2022 , at 2 PM</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">drop off</th>
+                                      <td>cairo airport</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">date/time</th>
+                                      <td>12-4-2022 , at 2 PM</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-md-4">
+                                <h4>driver details</h4>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">driver name</th>
+                                      <th scope="col">ahmed</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">mobile</th>
+                                      <td>0100528547</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">ID</th>
+                                      <td>500554474221</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">amount payable</th>
+                                      <td>3500 L.E</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header px-0 py-0 " id="headingTwo">
+                          <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <div class="main-accordion-title">
+                                <ul class="pt-2">
+                                  <li>
+                                   <span>
+                                    <i class="fas fa-check"></i>
+                                   </span> 
+                                  </li>
+                                  <li>
+                                   12/4/2020
+                                  </li>
+                                  <li>
+                                    3564275
+                                  </li>
+                                  <li>
+                                    4000 L.E
+                                  </li>
+                                </ul>
+                              </div>
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" >
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <h4>request details</h4>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">request num</th>
+                                      <th scope="col">First</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">total price</th>
+                                      <td>4000 L.E</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">deposite</th>
+                                      <td>500 L.E</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">amount payable</th>
+                                      <td>3500 L.E</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-md-4">
+                                <h4>car &amp; pick up / drop off details</h4>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">car category</th>
+                                      <th scope="col">sunny or similar</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">year</th>
+                                      <td>2022</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">pick up</th>
+                                      <td>cairo airport</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">date/time</th>
+                                      <td>12-4-2022 , at 2 PM</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">drop off</th>
+                                      <td>cairo airport</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">date/time</th>
+                                      <td>12-4-2022 , at 2 PM</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="col-md-4">
+                                <h4>driver details</h4>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">driver name</th>
+                                      <th scope="col">ahmed</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">mobile</th>
+                                      <td>0100528547</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">ID</th>
+                                      <td>500554474221</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">amount payable</th>
+                                      <td>3500 L.E</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="offset-lg-4 col-lg-4 text-center">
+                        <button class=" btn btn-outline-info show-invoice"  >show your invoice </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="offset-md-3 col-md-6 text-center">
+                        <div class="arrows-box">
+                          <button type="button" class="btn prev">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button type="button" class="btn next active">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-complete" role="tabpanel" aria-labelledby="nav-complete-tab">  <div class="sort-by">
+                    <select name="" id="">
+                      <option value="">last 6 months</option>
+                    </select>
+
+                  </div>
+                  <div class="main-accordion-title mt-ml-2">
+                    <ul>
+                      <li>
+                        
+                      </li>
+                      <li>
+                        pick up
+                      </li>
+                      <li>
+                        request
+                      </li>
+                      <li>
+                        total price
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header px-0 py-0 border-0" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="main-accordion-title">
+                              <ul class="pt-2">
+                                <li>
+                                 <span>
+                                  <i class="fas fa-check"></i>
+                                 </span> 
+                                </li>
+                                <li>
+                                 12/4/2020
+                                </li>
+                                <li>
+                                  3564275
+                                </li>
+                                <li>
+                                  4000 L.E
+                                </li>
+                              </ul>
+                            </div>
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" >
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <h4>request details</h4>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">request num</th>
+                                    <th scope="col">First</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">total price</th>
+                                    <td>4000 L.E</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">deposite</th>
+                                    <td>500 L.E</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">amount payable</th>
+                                    <td>3500 L.E</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-md-4">
+                              <h4>car &amp; pick up / drop off details</h4>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">car category</th>
+                                    <th scope="col">sunny or similar</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">year</th>
+                                    <td>2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">pick up</th>
+                                    <td>cairo airport</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">date/time</th>
+                                    <td>12-4-2022 , at 2 PM</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">drop off</th>
+                                    <td>cairo airport</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">date/time</th>
+                                    <td>12-4-2022 , at 2 PM</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-md-4">
+                              <h4>driver details</h4>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">driver name</th>
+                                    <th scope="col">ahmed</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">mobile</th>
+                                    <td>0100528547</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ID</th>
+                                    <td>500554474221</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">amount payable</th>
+                                    <td>3500 L.E</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header px-0 py-0 " id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="main-accordion-title">
+                              <ul class="pt-2">
+                                <li>
+                                 <span>
+                                  <i class="fas fa-check"></i>
+                                 </span> 
+                                </li>
+                                <li>
+                                 12/4/2020
+                                </li>
+                                <li>
+                                  3564275
+                                </li>
+                                <li>
+                                  4000 L.E
+                                </li>
+                              </ul>
+                            </div>
+                          </button>
+                        </h2>
+                      </div>
+
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" >
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <h4>request details</h4>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">request num</th>
+                                    <th scope="col">First</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">total price</th>
+                                    <td>4000 L.E</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">deposite</th>
+                                    <td>500 L.E</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">amount payable</th>
+                                    <td>3500 L.E</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-md-4">
+                              <h4>car &amp; pick up / drop off details</h4>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">car category</th>
+                                    <th scope="col">sunny or similar</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">year</th>
+                                    <td>2022</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">pick up</th>
+                                    <td>cairo airport</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">date/time</th>
+                                    <td>12-4-2022 , at 2 PM</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">drop off</th>
+                                    <td>cairo airport</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">date/time</th>
+                                    <td>12-4-2022 , at 2 PM</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-md-4">
+                              <h4>driver details</h4>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">driver name</th>
+                                    <th scope="col">ahmed</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">mobile</th>
+                                    <td>0100528547</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">ID</th>
+                                    <td>500554474221</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">amount payable</th>
+                                    <td>3500 L.E</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
                 </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-progress" role="tabpanel" aria-labelledby="nav-progress-tab">...</div>
-                <div class="tab-pane fade" id="nav-complete" role="tabpanel" aria-labelledby="nav-complete-tab">...</div>
-                <div class="tab-pane fade" id="nav-cancel" role="tabpanel" aria-labelledby="nav-cancel-tab">...</div>
+                  <div class="tab-pane fade" id="nav-cancel" role="tabpanel" aria-labelledby="nav-cancel-tab">
+                    
+                    <div class="empty-booking">
+                      <div class="img-empty">
+                        <img src="./imgs/dashboard/Group 2478.svg" alt="">
+                      </div>
+                      <div class="message">
+                        <h4>there is no cancelled bookings yet</h4>
+                        <p>try to search for a car & enjoy our best prices  </p>
+                        <button type="button" class="btn book-btn" id="booking-now">
+                          start your trip now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+             
               </div>
               <div class="offset-lg-1 col-lg-3 col-md-6">
                 <div class="right-side-info">

@@ -108,7 +108,7 @@ $("#signIn_btn").click(function () {
   $(".drop-down-sign-in").toggle();
 });
 $("#signIn .sign-in-btn").click(function () {
-  window.location.href='/dashboard/dashboard.html'
+  window.location.href='dashboard.html'
 });
 
 

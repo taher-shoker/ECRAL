@@ -3106,11 +3106,10 @@ footer .about-links li a {
   font-size: 30px;
   color: #8eb7c5;
 }
-.arrows-box button i {
-}
+
 .arrows-box button:hover,
 .arrows-box button:focus {
-  background: #fcb040;
+  background-color: #fcb040 !important;
   color: #fff;
 }
 .arrows-box .active {
