@@ -401,7 +401,7 @@ nav.p-x-165 .nav-links a {
 }
 .group-btns .rental-btn {
   background-color: rgb(252, 176, 64);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   border: none;
   margin-right: 15px;
 }
