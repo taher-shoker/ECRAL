@@ -357,9 +357,9 @@ nav.p-x-165 .nav-links a {
   color: #23a5d2;
 }
 .drop-down-sign-in .exclusive a {
-  font-size: 23px;
-  padding: 0;
-  color: #fcb040;
+  font-size: 23px !important;
+  padding: 0 !important;
+  color: #fcb040 !important;
   font-weight: bold;
 }
 .drop-down-sign-in p {
