@@ -1,230 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-    <title>ECRAL</title>
-    <!--=========== Bootstrap  Style ===============-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <!--=========== FontAwesome  ===============-->
-    <link rel="stylesheet" href="./css/all.css" />
-    <!--=========== Animations Css  ===============-->
-    <link rel="stylesheet" href="./css/animate.css" />
-    <!--=========== Date Picker Css  ===============-->
-    <link rel="stylesheet" href="./css/jquery-ui.css" />
-    <link rel="stylesheet" href="./css/jquery.timepicker.css" />
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/slick-theme.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"
-    />
-    <!--=========== Main CSS Style ===============-->
-    <link rel="stylesheet" href="./css/fileUploader.css" />
-    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
-    <link rel="stylesheet" href="./css/wizard.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <title>ECRAL</title>
+  <!--=========== Bootstrap  Style ===============-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <!--=========== FontAwesome  ===============-->
+  <link rel="stylesheet" href="./css/all.css" />
+  <!--=========== Animations Css  ===============-->
+  <link rel="stylesheet" href="./css/animate.css" />
+  <!--=========== Date Picker Css  ===============-->
+  <link rel="stylesheet" href="./css/jquery-ui.css" />
+  <link rel="stylesheet" href="./css/jquery.timepicker.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/slick-theme.css" />
 
-  </head>
-  <body>
-    <div class="container-scroller">
-      <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="dashboard.html"><img src="./imgs/footer-logo.png" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="dashboard.html"><img src="./imgs/logo-mini.svg" alt="logo" /></a>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
+  <!--=========== Main CSS Style ===============-->
+  <link rel="stylesheet" href="./css/fileUploader.css" />
+  <link rel="stylesheet" href="./css/wizard.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link rel="stylesheet" href="./css/dashboard.css" />
+
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+        <a class="sidebar-brand brand-logo" href="dashboard.html"><img src="./imgs/footer-logo.png" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo-mini" href="dashboard.html"><img src="./imgs/logo-mini.svg" alt="logo" /></a>
+      </div>
+      <ul class="nav">
+
+        <li class="nav-item nav-category">
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="dashboard.html">
+            <span class="menu-icon">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13" width="14" height="13">
+                <style>
+                  .s0 {
+                    fill: #ffffff
+                  }
+                </style>
+                <g clip-path="url(#cp1)">
+                  <path fill-rule="evenodd" class="s0"
+                    d="m11.2 1.6h0.9c0.8 0 1.4 0.7 1.4 1.5v8.5c0 0.8-0.6 1.4-1.4 1.4h-9.7c-0.8 0-1.4-0.6-1.4-1.4v-8.5c0-0.8 0.6-1.5 1.4-1.5h0.9v-0.5c0-0.3 0.2-0.6 0.5-0.6c0.4 0 0.6 0.3 0.6 0.6v0.5h1.1v-0.5c0-0.3 0.3-0.6 0.6-0.6c0.3 0 0.6 0.3 0.6 0.6v0.5h1.1v-0.5c0-0.3 0.3-0.6 0.6-0.6c0.3 0 0.6 0.3 0.6 0.6v0.5h1.1v-0.5c0-0.3 0.2-0.6 0.6-0.6c0.3 0 0.5 0.3 0.5 0.6zm0 1.1v0.6c0 0.3-0.2 0.5-0.5 0.5c-0.4 0-0.6-0.2-0.6-0.5v-0.6h-1.1v0.6c0 0.3-0.3 0.5-0.6 0.5c-0.3 0-0.6-0.2-0.6-0.5v-0.6h-1.1v0.6c0 0.3-0.3 0.5-0.6 0.5c-0.3 0-0.6-0.2-0.6-0.5v-0.6h-1.1v0.6c0 0.3-0.2 0.5-0.6 0.5c-0.3 0-0.5-0.2-0.5-0.5v-0.6h-0.9c-0.1 0-0.3 0.1-0.3 0.3v8.5c0 0.2 0.2 0.3 0.3 0.3h9.7c0.1 0 0.3-0.1 0.3-0.3v-8.5c0-0.2-0.2-0.3-0.3-0.3zm-7.4 3.7c-0.3 0-0.6-0.3-0.6-0.6c0-0.3 0.3-0.5 0.6-0.5h6c0.3 0 0.5 0.2 0.5 0.5c0 0.3-0.2 0.6-0.5 0.6zm0 2c-0.4 0-0.6-0.3-0.6-0.6c0-0.3 0.2-0.6 0.6-0.6h6.8c0.3 0 0.5 0.3 0.5 0.6c0 0.3-0.2 0.6-0.5 0.6zm0 2c-0.3 0-0.6-0.3-0.6-0.6c0-0.3 0.3-0.6 0.6-0.6h4c0.3 0 0.5 0.3 0.5 0.6c0 0.3-0.2 0.6-0.5 0.6z" />
+                </g>
+              </svg>
+            </span>
+            <span class="menu-title">Booking</span>
+          </a>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="pages/myInvoic.html">
+            <span class="menu-icon">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10" width="14" height="10">
+                <style>
+                  .s0 {
+                    fill: #ffffff
+                  }
+                </style>
+                <g clip-path="url(#cp1)">
+                  <path fill-rule="evenodd" class="s0"
+                    d="m1 1.9c0-0.8 0.6-1.4 1.4-1.4h9.7c0.8 0 1.4 0.6 1.4 1.4v5.7c0 0.8-0.6 1.4-1.4 1.4h-9.7c-0.8 0-1.4-0.6-1.4-1.4zm11.4 3.7v-1.8c-1.2-0.2-2-1.1-2.3-2.2h-5.7c-0.3 1.1-1.1 2-2.3 2.2v1.8c1.2 0.3 2 1.1 2.3 2.3h5.7c0.3-1.2 1.1-2 2.3-2.3zm-10.3 1.2v0.8c0 0.1 0.2 0.3 0.3 0.3h0.8c-0.2-0.5-0.6-0.9-1.1-1.1zm9.2-5.2c0.2 0.5 0.6 0.9 1.1 1.1v-0.8c0-0.2-0.2-0.3-0.3-0.3zm-8.2 0h-0.7c-0.2 0-0.3 0.1-0.3 0.3v0.8c0.5-0.2 0.9-0.6 1-1.1zm9.2 5.2c-0.5 0.2-0.9 0.6-1 1.1h0.7c0.2 0 0.3-0.2 0.3-0.3c0 0 0-0.8 0-0.8zm-5.1 0.2c-1.3 0-2.3-1-2.3-2.3c0-1.2 1-2.2 2.3-2.2c1.3 0 2.3 1 2.3 2.2c0 1.3-1 2.3-2.3 2.3zm0-1.1c0.6 0 1.1-0.5 1.1-1.2c0-0.6-0.5-1.1-1.1-1.1c-0.6 0-1.1 0.5-1.1 1.1c0 0.7 0.5 1.2 1.1 1.2z" />
+                </g>
+              </svg>
+            </span>
+            <span class="menu-title">My Invoice</span>
+          </a>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="#">
+            <span class="menu-icon">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 471.701 471.701"
+                style="enable-background:new 0 0 471.701 471.701;" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                        c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                        l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                        C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                        s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                        c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                        C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+
+            </span>
+            <span class="menu-title">Saved Later</span>
+          </a>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="#">
+            <span class="menu-icon">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                <style>
+                  .s0 {
+                    fill: #ffffff
+                  }
+                </style>
+                <g clip-path="url(#cp1)">
+                  <path fill-rule="evenodd" class="s0"
+                    d="m12.5 6.7c0 3.5-2.8 6.3-6.3 6.3c-3.4 0-6.2-2.8-6.2-6.3c0-3.4 2.8-6.2 6.2-6.2c3.5 0 6.3 2.8 6.3 6.2zm-1.5 0c0-2.6-2.1-4.7-4.8-4.7c-2.6 0-4.7 2.1-4.7 4.7c0 2.7 2.1 4.8 4.7 4.8c2.7 0 4.8-2.1 4.8-4.8z" />
+                  <path class="s0"
+                    d="m7.7 6.2c-0.4 0-0.7-0.3-0.7-0.7c0-0.4 0.3-0.8 0.7-0.8c0.5 0 0.8 0.4 0.8 0.8c0 0.4-0.3 0.7-0.8 0.7z" />
+                  <path class="s0"
+                    d="m4.7 6.2c-0.4 0-0.7-0.3-0.7-0.7c0-0.4 0.3-0.8 0.7-0.8c0.5 0 0.8 0.4 0.8 0.8c0 0.4-0.3 0.7-0.8 0.7z" />
+                  <path class="s0"
+                    d="m8.8 7.9c0.3 0.3 0.3 0.8 0 1.1c-0.7 0.6-1.6 1-2.6 1c-0.9 0-1.8-0.4-2.5-1c-0.3-0.3-0.3-0.8 0-1.1c0.3-0.3 0.8-0.3 1.1 0c0.8 0.8 2.1 0.8 2.9 0c0.3-0.3 0.8-0.3 1.1 0z" />
+                </g>
+              </svg>
+            </span>
+            <span class="menu-title">Feed Back</span>
+          </a>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" href="#">
+            <span class="menu-icon">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
+                <defs>
+                  <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                    <path d="m-51-333h960v1360h-960z" />
+                  </clipPath>
+                </defs>
+                <style>
+                  .s2 {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-width: 2
+                  }
+                </style>
+                <g clip-path="url(#cp1)">
+                  <path fill-rule="evenodd" class="s0"
+                    d="m15.4 10.1c0.1 0.1 0.1 0.3 0.1 0.4l-1.3 2.2c-0.1 0.2-0.3 0.2-0.4 0.2l-1.6-0.7q-0.5 0.4-1.1 0.7l-0.2 1.7c-0.1 0.1-0.2 0.3-0.4 0.3h-2.5c-0.2 0-0.3-0.2-0.3-0.3l-0.3-1.7q-0.6-0.3-1.1-0.7l-1.6 0.7c-0.1 0-0.3 0-0.4-0.2l-1.3-2.2c0-0.1 0-0.3 0.1-0.4l1.4-1q-0.1-0.4-0.1-0.7q0-0.3 0.1-0.6l-1.4-1.1c-0.1-0.1-0.1-0.2-0.1-0.4l1.3-2.2c0.1-0.1 0.3-0.2 0.4-0.1l1.6 0.6q0.5-0.4 1.1-0.6l0.3-1.7c0-0.2 0.1-0.3 0.3-0.3h2.5c0.2 0 0.3 0.1 0.4 0.3l0.2 1.7q0.6 0.2 1.1 0.6l1.6-0.6c0.1-0.1 0.3 0 0.4 0.1l1.3 2.2c0 0.2 0 0.3-0.1 0.4l-1.4 1.1q0.1 0.3 0.1 0.6q0 0.3-0.1 0.7zm-3.9-1.7c0-1.3-1-2.3-2.2-2.3c-1.2 0-2.3 1-2.3 2.3c0 1.2 1.1 2.2 2.3 2.2c1.2 0 2.2-1 2.2-2.2z" />
+                </g>
+              </svg>
+            </span>
+            <span class="menu-title">Setting</span>
+          </a>
+        </li>
+
+
+      </ul>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar p-0 fixed-top d-flex flex-row">
+        <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo-mini" href="dashboard.html"><img src="./imgs/logo-mini.svg"
+              alt="logo" /></a>
         </div>
-        <ul class="nav">
-        
-          <li class="nav-item nav-category">
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="dashboard.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-calendar-text-outline"></i>
-              </span>
-              <span class="menu-title">Booking</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/myInvoic.html">
-              <span class="menu-icon">
-                <img src="./imgs/dashboard/icon.svg" alt="logo" />
-              </span>
-              <span class="menu-title">My Invoice</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
-              <span class="menu-icon">
-                <i class="mdi mdi-heart-outline"></i>
-              </span>
-              <span class="menu-title">Saved Later</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
-              <span class="menu-icon">
-                <i class="mdi mdi-emoticon-outline"></i>
-              </span>
-              <span class="menu-title">Feed Back</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
-              <span class="menu-icon">
-                <i class="mdi mdi-settings"></i>
-              </span>
-              <span class="menu-title">Setting</span>
-            </a>
-          </li>
-          
-       
-        </ul>
-      </nav>
-      <!-- partial -->
-      <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_navbar.html -->
-        <nav class="navbar p-0 fixed-top d-flex flex-row">
-          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo-mini" href="dashboard.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
-          </div>
-          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-          
-            <ul class="navbar-nav navbar-nav-right">
-              <li class="nav-item nav-settings d-none d-lg-block">
-                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-              
-                  <img src="./imgs/icon.png" alt="menu" />
-                 <span> Menu</span>
-                </button>
-              </li>
-              <li class="nav-item dropdown border-left">
-                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
-                  <i class="mdi mdi-bell-outline"></i>
-                  <span class="count bg-danger"></span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                  <h6 class="p-3 mb-0">Notifications</h6>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon  rounded-circle">
-                        <i class="mdi mdi-calendar text-success"></i>
-                      </div>
+        <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-settings d-none d-lg-block">
+              <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+
+                <img src="./imgs/icon.png" alt="menu" />
+                <span> Menu</span>
+              </button>
+            </li>
+            <li class="nav-item dropdown border-left">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+                data-bs-toggle="dropdown">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.83">
+                  <title>notification-bell</title>
+                  <path
+                    d="M73.81,7.47A43.14,43.14,0,0,1,92.69,19.35a42.33,42.33,0,0,1,10.76,21.36l0,.28c.21,1.21.36,2.36.45,3.44.11,1.26.17,2.53.17,3.8h0V58.36c0,2.81,0,5.67.2,8.54a32.41,32.41,0,0,0,4.34,14.62A36.6,36.6,0,0,0,120,92.83a6.34,6.34,0,0,1,2.65,3.65,6.52,6.52,0,0,1-.08,3.56,6.62,6.62,0,0,1-1.91,3,6.33,6.33,0,0,1-4.25,1.57H82.27l0,.08h0c-4.14,24.2-37.61,24.13-41.65-.08H6.45A6.33,6.33,0,0,1,2,102.92a6.6,6.6,0,0,1-1.81-6.5A6.33,6.33,0,0,1,3,92.71c5.66-3.83,9.62-8,12.12-12.76s3.65-10.44,3.65-17.28V48.23c0-1.16.06-2.42.18-3.77s.29-2.52.51-3.76A42.89,42.89,0,0,1,49.39,7.41C54-2.47,69.2-2.49,73.81,7.47ZM87.71,24A36.34,36.34,0,0,0,70.38,13.57,3.42,3.42,0,0,1,68,11.22c-1.71-5.87-11-6-12.72-.05a3.43,3.43,0,0,1-2.48,2.38A36.1,36.1,0,0,0,26.15,41.9q-.28,1.58-.42,3.15c-.09,1-.13,2-.13,3.18V62.67c0,7.91-1.38,14.56-4.45,20.43-2.94,5.62-7.36,10.39-13.54,14.72H115.27A42.38,42.38,0,0,1,102.8,85,39.18,39.18,0,0,1,97.5,67.4c-.22-2.88-.21-6-.2-9V48.23h0c0-1.1,0-2.17-.13-3.22s-.21-2-.36-2.85l-.06-.27a35.62,35.62,0,0,0-9-17.9Z" />
+                </svg>
+                <span class="count bg-danger">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                aria-labelledby="notificationDropdown">
+                <h6 class="p-3 mb-0">Notifications</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <i class="mdi mdi-calendar text-success"></i>
                     </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Event today</p>
-                      <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon  rounded-circle">
-                        <i class="mdi mdi-settings text-danger"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Settings</p>
-                      <p class="text-muted ellipsis mb-0"> Update dashboard.html </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon  rounded-circle">
-                        <i class="mdi mdi-link-variant text-warning"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Launch Admin</p>
-                      <p class="text-muted ellipsis mb-0"> New admin wow! </p>
-                    </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0 text-center">See all notifications</p>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown">
-                  <div class="navbar-profile">
-                    <!-- <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt=""> -->
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Hi,Ahmed Mohammed </p>
-                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-1">Event today</p>
+                    <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
                   </div>
                 </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon  rounded-circle">
-                        <i class="mdi mdi-settings text-warning"></i>
-                      </div>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
+                        <defs>
+                          <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                            <path d="m-51-333h960v1360h-960z" />
+                          </clipPath>
+                        </defs>
+                        <style>
+                          .s2 {
+                            fill: none;
+                            stroke: #0000;
+                            stroke-width: 2
+                          }
+                        </style>
+                        <g clip-path="url(#cp1)">
+                          <path fill-rule="evenodd" class="s0"
+                            d="m15.4 10.1c0.1 0.1 0.1 0.3 0.1 0.4l-1.3 2.2c-0.1 0.2-0.3 0.2-0.4 0.2l-1.6-0.7q-0.5 0.4-1.1 0.7l-0.2 1.7c-0.1 0.1-0.2 0.3-0.4 0.3h-2.5c-0.2 0-0.3-0.2-0.3-0.3l-0.3-1.7q-0.6-0.3-1.1-0.7l-1.6 0.7c-0.1 0-0.3 0-0.4-0.2l-1.3-2.2c0-0.1 0-0.3 0.1-0.4l1.4-1q-0.1-0.4-0.1-0.7q0-0.3 0.1-0.6l-1.4-1.1c-0.1-0.1-0.1-0.2-0.1-0.4l1.3-2.2c0.1-0.1 0.3-0.2 0.4-0.1l1.6 0.6q0.5-0.4 1.1-0.6l0.3-1.7c0-0.2 0.1-0.3 0.3-0.3h2.5c0.2 0 0.3 0.1 0.4 0.3l0.2 1.7q0.6 0.2 1.1 0.6l1.6-0.6c0.1-0.1 0.3 0 0.4 0.1l1.3 2.2c0 0.2 0 0.3-0.1 0.4l-1.4 1.1q0.1 0.3 0.1 0.6q0 0.3-0.1 0.7zm-3.9-1.7c0-1.3-1-2.3-2.2-2.3c-1.2 0-2.3 1-2.3 2.3c0 1.2 1.1 2.2 2.3 2.2c1.2 0 2.2-1 2.2-2.2z" />
+                        </g>
+                      </svg>
                     </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Settings</p>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-1">Settings</p>
+                    <p class="text-muted ellipsis mb-0"> Update dashboard.html </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <i class="mdi mdi-link-variant text-warning"></i>
                     </div>
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon  rounded-circle">
-                        <i class="mdi mdi-logout text-warning"></i>
-                      </div>
-                    </div>
-                    <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Log out</p>
-                    </div>
-                  </a>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-1">Launch Admin</p>
+                    <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <p class="p-3 mb-0 text-center">See all notifications</p>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown">
+                <div class="navbar-profile">
+                  <!-- <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt=""> -->
+                  <div class="mb-0 d-none d-sm-block navbar-profile-name">Hi,Ahmed Mohammed </div>
+                  <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                 </div>
-              </li>
-              <li class="nav-item dropdown  d-lg-block">
-                <a class="nav-link btn btn-outline-info create-new-button" id="createbuttonDropdown"  href="#">Long Term Rent </a>
-              </li>
-            </ul>
-            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-              <img src="assets/images/icon.png" alt="menu" />
-            </button>
-          </div>
-        </nav>
-        <!-- partial -->
-        <div class="main-panel">
-          <div class="content-wrapper">
-           
-          </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © ECRAL.com 2022</span>
-            </div>
-          </footer>
-          <!-- partial -->
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list profile-drop"
+                aria-labelledby="profileDropdown">
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
+                        <g clip-path="url(#cp1)">
+                          <path fill-rule="evenodd" class="s0"
+                            d="m15.4 10.1c0.1 0.1 0.1 0.3 0.1 0.4l-1.3 2.2c-0.1 0.2-0.3 0.2-0.4 0.2l-1.6-0.7q-0.5 0.4-1.1 0.7l-0.2 1.7c-0.1 0.1-0.2 0.3-0.4 0.3h-2.5c-0.2 0-0.3-0.2-0.3-0.3l-0.3-1.7q-0.6-0.3-1.1-0.7l-1.6 0.7c-0.1 0-0.3 0-0.4-0.2l-1.3-2.2c0-0.1 0-0.3 0.1-0.4l1.4-1q-0.1-0.4-0.1-0.7q0-0.3 0.1-0.6l-1.4-1.1c-0.1-0.1-0.1-0.2-0.1-0.4l1.3-2.2c0.1-0.1 0.3-0.2 0.4-0.1l1.6 0.6q0.5-0.4 1.1-0.6l0.3-1.7c0-0.2 0.1-0.3 0.3-0.3h2.5c0.2 0 0.3 0.1 0.4 0.3l0.2 1.7q0.6 0.2 1.1 0.6l1.6-0.6c0.1-0.1 0.3 0 0.4 0.1l1.3 2.2c0 0.2 0 0.3-0.1 0.4l-1.4 1.1q0.1 0.3 0.1 0.6q0 0.3-0.1 0.7zm-3.9-1.7c0-1.3-1-2.3-2.2-2.3c-1.2 0-2.3 1-2.3 2.3c0 1.2 1.1 2.2 2.3 2.2c1.2 0 2.2-1 2.2-2.2z" />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-0">Settings</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.989 511.989"
+                        style="enable-background:new 0 0 511.989 511.989;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <g>
+                              <path d="M110.933,221.782c-4.71,0-8.533,3.823-8.533,8.533v51.2c0,4.71,3.823,8.533,8.533,8.533s8.533-3.823,8.533-8.533v-51.2
+				C119.467,225.605,115.644,221.782,110.933,221.782z" />
+                              <path d="M111.855,2.304L31.172,34.586C8.448,43,0,54.418,0,76.715v358.477c0,22.298,8.448,33.715,30.959,42.061l81.058,32.427
+				c4.011,1.519,8.038,2.287,11.981,2.287c17.152,0,29.602-14.336,29.602-34.091V34.049C153.6,9.78,134.246-6.126,111.855,2.304z
+				 M136.533,477.876c0,10.18-5.035,17.024-12.535,17.024c-1.869,0-3.883-0.401-5.803-1.118L37.103,461.33
+				c-16.102-5.965-20.036-11.102-20.036-26.138V76.715c0-15.036,3.934-20.164,20.241-26.206l80.725-32.29
+				c2.082-0.785,4.087-1.186,5.956-1.186c7.501,0,12.544,6.835,12.544,17.016V477.876z" />
+                              <path d="M178.133,51.115h120.533c14.114,0,25.6,11.486,25.6,25.6v128c0,4.71,3.814,8.533,8.533,8.533
+				c4.719,0,8.533-3.823,8.533-8.533v-128c0-23.526-19.14-42.667-42.667-42.667H178.133c-4.71,0-8.533,3.823-8.533,8.533
+				S173.423,51.115,178.133,51.115z" />
+                              <path d="M332.8,298.582c-4.719,0-8.533,3.823-8.533,8.533v128c0,14.114-11.486,25.6-25.6,25.6H179.2
+				c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533h119.467c23.526,0,42.667-19.14,42.667-42.667v-128
+				C341.333,302.405,337.519,298.582,332.8,298.582z" />
+                              <path d="M511.343,252.655c-0.435-1.05-1.058-1.988-1.852-2.782l-85.325-85.333c-3.337-3.336-8.73-3.336-12.066,0
+				c-3.337,3.337-3.337,8.73,0,12.066l70.767,70.775H196.267c-4.71,0-8.533,3.823-8.533,8.533c0,4.71,3.823,8.533,8.533,8.533
+				h286.601L412.1,335.215c-3.337,3.337-3.337,8.73,0,12.066c1.664,1.664,3.849,2.5,6.033,2.5c2.185,0,4.369-0.836,6.033-2.5
+				l85.325-85.325c0.794-0.794,1.417-1.732,1.852-2.782C512.205,257.093,512.205,254.738,511.343,252.655z" />
+                            </g>
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-1">Log out</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown  d-lg-block">
+              <a class="nav-link btn btn-outline-info create-new-button" id="createbuttonDropdown" href="#">Long Term
+                Rent </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+            data-toggle="offcanvas">
+            <img src="./imgs/icon.png" alt="menu" />
+          </button>
         </div>
-        <!-- main-panel ends -->
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-8 col-md-6">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-link active" id="nav-progress-tab" data-toggle="tab" href="#nav-progress" role="tab" aria-controls="nav-progress" aria-selected="true">progress</a>
+                  <a class="nav-link" id="nav-complete-tab" data-toggle="tab" href="#nav-complete" role="tab" aria-controls="nav-complete" aria-selected="false">complete</a>
+                  <a class="nav-link" id="nav-cancel-tab" data-toggle="tab" href="#nav-cancel" role="tab" aria-controls="nav-cancel" aria-selected="false">cancel</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-progress" role="tabpanel" aria-labelledby="nav-progress-tab">...</div>
+                <div class="tab-pane fade" id="nav-complete" role="tabpanel" aria-labelledby="nav-complete-tab">...</div>
+                <div class="tab-pane fade" id="nav-cancel" role="tabpanel" aria-labelledby="nav-cancel-tab">...</div>
+              </div>
+              </div>
+              <div class="offset-lg-1 col-lg-3 col-md-6">
+                <div class="right-side-info">
+                  <div class="img-svg">
+                  <img src="./imgs/dashboard/Group 1546.svg" alt="">
+                  </div>
+                  <div class="welcome-user">
+                    <h2>
+                      <p>hello mr ahmed,</p>
+                      <p>
+                        we hope <br>
+                        to <strong>see you again</strong> 
+                      </p>
+                     
+                    </h2>
+                    <button type="button" class="btn book-btn" id="booking-now">
+                      book now
+                    </button>
+                  </div>
+              </div>
+              <div class="sth-part">
+                <img src="./imgs/dashboard/Group 1569.png" alt="">
+              </div>
+            </div>
+            </div>
+         
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © ECRAL.com
+              2022</span>
+          </div>
+        </footer>
+        <!-- partial -->
       </div>
-      <!-- page-body-wrapper ends -->
+      <!-- main-panel ends -->
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/jquery-1.11.1.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/wow.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
-    <script src="./js/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery-1.11.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/wow.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
 
-    <script src="./js/jquery.timepicker.js"></script>
-    <script src="./js/off-canvas.js"></script>
-    <script src="./js/misc.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/vendor.bundle.base.js"></script>
+  <script src="./js/jquery.timepicker.js"></script>
+  <script src="./js/off-canvas.js"></script>
+  <script src="./js/misc.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/vendor.bundle.base.js"></script>
+</body>
 
-    <script src="./js/main.js"></script>
-  </body>
 </html>
