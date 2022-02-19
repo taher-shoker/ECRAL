@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ECRAL Admin</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-  
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <title>ECRAL</title>
+    <!--=========== Bootstrap  Style ===============-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--=========== FontAwesome  ===============-->
+    <link rel="stylesheet" href="./css/all.css" />
+    <!--=========== Animations Css  ===============-->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!--=========== Date Picker Css  ===============-->
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" href="./css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"
+    />
+    <!--=========== Main CSS Style ===============-->
+    <link rel="stylesheet" href="./css/fileUploader.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="./css/wizard.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
   </head>
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="dashboard.html"><img src="assets/images/footer-logo.png" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="dashboard.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="dashboard.html"><img src="./imgs/footer-logo.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="dashboard.html"><img src="./imgs/logo-mini.svg" alt="logo" /></a>
         </div>
         <ul class="nav">
         
@@ -37,7 +51,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="pages/myInvoic.html">
               <span class="menu-icon">
-                <i class="mdi mdi-cash"></i>
+                <img src="./imgs/dashboard/icon.svg" alt="logo" />
               </span>
               <span class="menu-title">My Invoice</span>
             </a>
@@ -83,7 +97,7 @@
               <li class="nav-item nav-settings d-none d-lg-block">
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
               
-                  <img src="assets/images/icon.png" alt="menu" />
+                  <img src="./imgs/icon.png" alt="menu" />
                  <span> Menu</span>
                 </button>
               </li>
@@ -195,16 +209,22 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-           <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <!-- End custom js for this page -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+
+    <script src="./js/jquery.timepicker.js"></script>
+    <script src="./js/off-canvas.js"></script>
+    <script src="./js/misc.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/vendor.bundle.base.js"></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
