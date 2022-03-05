@@ -18,7 +18,7 @@ background-color:#ff6d6d !important;
 }
 .right-side-info {
   background-color: #f0f7f9;
-  margin-top: 11rem;
+  margin-top: 5rem;
   position: relative;
   min-height: 200px;
   /* width:250px; */
@@ -78,10 +78,12 @@ background-color:#ff6d6d !important;
 .sth-part {
   /* width: 250px; */
   margin-left: auto;
-  margin-top: 25px;
+  margin-top: 12px;
+  height: 258px;
 }
 .sth-part img {
   width: 100%;
+  height: 100%;
 }
 .dashboard-cards .nav-tabs{
 
@@ -242,8 +244,11 @@ padding: 5px;
 table {
   color: rgb(11, 53, 67);
   margin-top: 40px;
-  /* border: 1px solid #79c3f2; */
   box-shadow: 0 0 10px #dcd7d7;
+}
+table.border{
+  border: 1px solid #b1b9bc  !important;
+
 }
 .dashboard-cards  .card{
   margin-top: 20px;
@@ -289,7 +294,61 @@ table {
   font-weight: bold;
 }
 .empty-booking .message p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #6c929f;
   font-weight: normal;
+  text-transform: lowercase;
+}
+
+.mt-4-r{
+  margin-top: 4rem !important;
+}
+.mt-6-r{
+  margin-top: 6rem !important;
+}
+.feed-back-box{
+  width: 60%;
+  margin: 3rem auto;
+}
+.feed-inputs ul{
+  display: flex;
+  justify-content: space-between;
+}
+.feed-inputs ul li img{
+  width: 60px;
+  height: 60px;
+}
+.form-feedback{
+
+margin-top: 5rem;
+}
+.form-feedback textarea{
+
+border: 0;
+
+background: #e7eef087;
+
+width: 100%;
+
+height: 150px;
+
+border-bottom: 2px solid #0a3442;
+
+margin-top: 2rem;
+}
+.form-feedback button{
+  
+width: 90%;
+  
+margin: 16px auto;
+  
+border: 1px solid #0a3442;
+  
+text-transform: capitalize;
+  
+border-radius: 20px;
+  
+padding: 16px;
+  
+font-size: 22px;
 }
