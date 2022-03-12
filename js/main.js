@@ -251,6 +251,31 @@ $( "#slider-kilometers" ).slider({
 });
 } );
 
+
+
+$( function() {
+  var handle = $( "#custom-feedback" );
+
+$( "#slider-feedback" ).slider({
+  value: 60,
+  orientation: "horizontal",
+  range: "min",
+  min: 100,
+  max: 500,
+  step: 100,
+  animate: true,
+  create: function() {
+          // handle.text( $( this ).slider( "value" ) );
+        },
+        slide: function( event, ui ) {
+          // handle.text( ui.value );
+        }
+  
+});
+} );
+
+
+
 $("#booking-now").click(function () {
   Swal.fire({
     position: 'top',
@@ -276,3 +301,30 @@ $( function() {
   $( "#amount" ).val(  $( "#slider-range-filter" ).slider( "values", 0 ) +" L.E"  +
     " - " + $( "#slider-range-filter" ).slider( "values", 1 ) + " L.E"  );
 } );
+
+
+$(".circle_percent").each(function() {
+  var $this = $(this),
+  $dataV = $this.data("percent"),
+  $dataDeg = $dataV * 3.6,
+  $round = $this.find(".round_per");
+$round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");	
+$this.append('<div class="circle_inbox"><span class="text-bal"> your balance</span> <span class="percent_text"></span></div>');
+$this.prop('Counter', 0).animate({Counter: $dataV},
+{
+  duration: 2000, 
+  easing: 'swing', 
+  step: function (now) {
+          $this.find(".percent_text").text("EGP"+ Math.ceil(now) * 100);
+      }
+  });
+if($dataV >= 51){
+  $round.css("transform", "rotate(" + 360 + "deg)");
+  setTimeout(function(){
+    $this.addClass("percent_more");
+  },1000);
+  setTimeout(function(){
+    $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+  },1000);
+} 
+});

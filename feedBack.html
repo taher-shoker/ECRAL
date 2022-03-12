@@ -213,9 +213,19 @@
                 </svg>
                 <span class="count bg-danger">3</span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list notifications"
                 aria-labelledby="notificationDropdown">
                 <h6 class="p-3 mb-0">Notifications</h6>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <i class="mdi mdi-calendar text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                  </div>
+                </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
@@ -224,36 +234,6 @@
                     </div>
                   </div>
                   <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Event today</p>
-                    <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon  rounded-circle">
-                      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
-                        <defs>
-                          <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                            <path d="m-51-333h960v1360h-960z" />
-                          </clipPath>
-                        </defs>
-                        <style>
-                          .s2 {
-                            fill: none;
-                            stroke: #0000;
-                            stroke-width: 2
-                          }
-                        </style>
-                        <g clip-path="url(#cp1)">
-                          <path fill-rule="evenodd" class="s0"
-                            d="m15.4 10.1c0.1 0.1 0.1 0.3 0.1 0.4l-1.3 2.2c-0.1 0.2-0.3 0.2-0.4 0.2l-1.6-0.7q-0.5 0.4-1.1 0.7l-0.2 1.7c-0.1 0.1-0.2 0.3-0.4 0.3h-2.5c-0.2 0-0.3-0.2-0.3-0.3l-0.3-1.7q-0.6-0.3-1.1-0.7l-1.6 0.7c-0.1 0-0.3 0-0.4-0.2l-1.3-2.2c0-0.1 0-0.3 0.1-0.4l1.4-1q-0.1-0.4-0.1-0.7q0-0.3 0.1-0.6l-1.4-1.1c-0.1-0.1-0.1-0.2-0.1-0.4l1.3-2.2c0.1-0.1 0.3-0.2 0.4-0.1l1.6 0.6q0.5-0.4 1.1-0.6l0.3-1.7c0-0.2 0.1-0.3 0.3-0.3h2.5c0.2 0 0.3 0.1 0.4 0.3l0.2 1.7q0.6 0.2 1.1 0.6l1.6-0.6c0.1-0.1 0.3 0 0.4 0.1l1.3 2.2c0 0.2 0 0.3-0.1 0.4l-1.4 1.1q0.1 0.3 0.1 0.6q0 0.3-0.1 0.7zm-3.9-1.7c0-1.3-1-2.3-2.2-2.3c-1.2 0-2.3 1-2.3 2.3c0 1.2 1.1 2.2 2.3 2.2c1.2 0 2.2-1 2.2-2.2z" />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Settings</p>
                     <p class="text-muted ellipsis mb-0"> Update dashboard.html </p>
                   </div>
                 </a>
@@ -261,11 +241,10 @@
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <div class="preview-icon  rounded-circle">
-                      <i class="mdi mdi-link-variant text-warning"></i>
+                      <i class="mdi mdi-calendar text-success"></i>
                     </div>
                   </div>
                   <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Launch Admin</p>
                     <p class="text-muted ellipsis mb-0"> New admin wow! </p>
                   </div>
                 </a>
@@ -283,7 +262,126 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list profile-drop"
                 aria-labelledby="profileDropdown">
-                <a class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item" href="dashboard.html">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13" width="14" height="13">
+                        <style>
+                          .s0 {
+                            fill: #ffffff
+                          }
+                        </style>
+                        <g clip-path="url(#cp1)">
+                          <path fill-rule="evenodd" class="s0"
+                            d="m11.2 1.6h0.9c0.8 0 1.4 0.7 1.4 1.5v8.5c0 0.8-0.6 1.4-1.4 1.4h-9.7c-0.8 0-1.4-0.6-1.4-1.4v-8.5c0-0.8 0.6-1.5 1.4-1.5h0.9v-0.5c0-0.3 0.2-0.6 0.5-0.6c0.4 0 0.6 0.3 0.6 0.6v0.5h1.1v-0.5c0-0.3 0.3-0.6 0.6-0.6c0.3 0 0.6 0.3 0.6 0.6v0.5h1.1v-0.5c0-0.3 0.3-0.6 0.6-0.6c0.3 0 0.6 0.3 0.6 0.6v0.5h1.1v-0.5c0-0.3 0.2-0.6 0.6-0.6c0.3 0 0.5 0.3 0.5 0.6zm0 1.1v0.6c0 0.3-0.2 0.5-0.5 0.5c-0.4 0-0.6-0.2-0.6-0.5v-0.6h-1.1v0.6c0 0.3-0.3 0.5-0.6 0.5c-0.3 0-0.6-0.2-0.6-0.5v-0.6h-1.1v0.6c0 0.3-0.3 0.5-0.6 0.5c-0.3 0-0.6-0.2-0.6-0.5v-0.6h-1.1v0.6c0 0.3-0.2 0.5-0.6 0.5c-0.3 0-0.5-0.2-0.5-0.5v-0.6h-0.9c-0.1 0-0.3 0.1-0.3 0.3v8.5c0 0.2 0.2 0.3 0.3 0.3h9.7c0.1 0 0.3-0.1 0.3-0.3v-8.5c0-0.2-0.2-0.3-0.3-0.3zm-7.4 3.7c-0.3 0-0.6-0.3-0.6-0.6c0-0.3 0.3-0.5 0.6-0.5h6c0.3 0 0.5 0.2 0.5 0.5c0 0.3-0.2 0.6-0.5 0.6zm0 2c-0.4 0-0.6-0.3-0.6-0.6c0-0.3 0.2-0.6 0.6-0.6h6.8c0.3 0 0.5 0.3 0.5 0.6c0 0.3-0.2 0.6-0.5 0.6zm0 2c-0.3 0-0.6-0.3-0.6-0.6c0-0.3 0.3-0.6 0.6-0.6h4c0.3 0 0.5 0.3 0.5 0.6c0 0.3-0.2 0.6-0.5 0.6z" />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-0">Booking</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item" href="myInvoice.html">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10" width="14" height="10">
+                        <style>
+                          .s0 {
+                            fill: #ffffff
+                          }
+                        </style>
+                        <g clip-path="url(#cp1)">
+                          <path fill-rule="evenodd" class="s0"
+                            d="m1 1.9c0-0.8 0.6-1.4 1.4-1.4h9.7c0.8 0 1.4 0.6 1.4 1.4v5.7c0 0.8-0.6 1.4-1.4 1.4h-9.7c-0.8 0-1.4-0.6-1.4-1.4zm11.4 3.7v-1.8c-1.2-0.2-2-1.1-2.3-2.2h-5.7c-0.3 1.1-1.1 2-2.3 2.2v1.8c1.2 0.3 2 1.1 2.3 2.3h5.7c0.3-1.2 1.1-2 2.3-2.3zm-10.3 1.2v0.8c0 0.1 0.2 0.3 0.3 0.3h0.8c-0.2-0.5-0.6-0.9-1.1-1.1zm9.2-5.2c0.2 0.5 0.6 0.9 1.1 1.1v-0.8c0-0.2-0.2-0.3-0.3-0.3zm-8.2 0h-0.7c-0.2 0-0.3 0.1-0.3 0.3v0.8c0.5-0.2 0.9-0.6 1-1.1zm9.2 5.2c-0.5 0.2-0.9 0.6-1 1.1h0.7c0.2 0 0.3-0.2 0.3-0.3c0 0 0-0.8 0-0.8zm-5.1 0.2c-1.3 0-2.3-1-2.3-2.3c0-1.2 1-2.2 2.3-2.2c1.3 0 2.3 1 2.3 2.2c0 1.3-1 2.3-2.3 2.3zm0-1.1c0.6 0 1.1-0.5 1.1-1.2c0-0.6-0.5-1.1-1.1-1.1c-0.6 0-1.1 0.5-1.1 1.1c0 0.7 0.5 1.2 1.1 1.2z" />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-0">My Invoice</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item" href="savedLater.html">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 471.701 471.701"
+                      style="enable-background:new 0 0 471.701 471.701;" xml:space="preserve">
+                      <g>
+                        <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                              c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                              l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                              C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                              s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                              c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                              C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-0">Saved Later</p>
+                  </div>
+                </a>
+          
+                <a class="dropdown-item preview-item" href="feedBack.html">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon  rounded-circle">
+                      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13">
+                        <style>
+                          .s0 {
+                            fill: #ffffff
+                          }
+                        </style>
+                        <g clip-path="url(#cp1)">
+                          <path fill-rule="evenodd" class="s0"
+                            d="m12.5 6.7c0 3.5-2.8 6.3-6.3 6.3c-3.4 0-6.2-2.8-6.2-6.3c0-3.4 2.8-6.2 6.2-6.2c3.5 0 6.3 2.8 6.3 6.2zm-1.5 0c0-2.6-2.1-4.7-4.8-4.7c-2.6 0-4.7 2.1-4.7 4.7c0 2.7 2.1 4.8 4.7 4.8c2.7 0 4.8-2.1 4.8-4.8z" />
+                          <path class="s0"
+                            d="m7.7 6.2c-0.4 0-0.7-0.3-0.7-0.7c0-0.4 0.3-0.8 0.7-0.8c0.5 0 0.8 0.4 0.8 0.8c0 0.4-0.3 0.7-0.8 0.7z" />
+                          <path class="s0"
+                            d="m4.7 6.2c-0.4 0-0.7-0.3-0.7-0.7c0-0.4 0.3-0.8 0.7-0.8c0.5 0 0.8 0.4 0.8 0.8c0 0.4-0.3 0.7-0.8 0.7z" />
+                          <path class="s0"
+                            d="m8.8 7.9c0.3 0.3 0.3 0.8 0 1.1c-0.7 0.6-1.6 1-2.6 1c-0.9 0-1.8-0.4-2.5-1c-0.3-0.3-0.3-0.8 0-1.1c0.3-0.3 0.8-0.3 1.1 0c0.8 0.8 2.1 0.8 2.9 0c0.3-0.3 0.8-0.3 1.1 0z" />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-0">Feed Back</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item" href="setting.html">
                   <div class="preview-thumbnail">
                     <div class="preview-icon  rounded-circle">
                       <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
@@ -387,27 +485,29 @@
 
               <div class="feed-back-box">
                 <div class="feed-inputs">
-                  <ul>
-                    <li>
-                      <img src="./imgs/dashboard/feedback-emotions/verybad.svg" alt="veryBad">
-                    </li>
-                    <li>
-                      <img src="./imgs/dashboard/feedback-emotions/bad.svg" alt="bad">
-                    </li>
-                    <li>
-                      <img src="./imgs/dashboard/feedback-emotions/normal.svg" alt="normal">
-                    </li>
-                    <li>
-                      <img src="./imgs/dashboard/feedback-emotions/good.svg" alt="good">
-                    </li>
-                    <li>
-                      <img src="./imgs/dashboard/feedback-emotions/verygood.svg" alt="veryGood">
-                    </li>
-                  </ul>
+                  
                   <div class="form-group mt-6 mb-4">
-                    <div id="slider-kilometers" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                      <div id="custom-handle" class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: 33.3333%;">4000</div>
-                    <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 33.3333%;"></div></div>
+                    <div id="slider-feedback" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                      <ul class="emotions">
+                        <li >
+                          <img src="./imgs/dashboard/feedback-emotions/verybad.svg" alt="veryBad">
+                        </li>
+                        <li>
+                          <img src="./imgs/dashboard/feedback-emotions/bad.svg" alt="bad">
+                        </li>
+                        <li>
+                          <img src="./imgs/dashboard/feedback-emotions/normal.svg" alt="normal">
+                        </li>
+                        <li>
+                          <img src="./imgs/dashboard/feedback-emotions/good.svg" alt="good">
+                        </li>
+                        <li>
+                          <img src="./imgs/dashboard/feedback-emotions/verygood.svg" alt="veryGood">
+                        </li>
+                      </ul>
+                      <div class="line"></div>
+                      <div id="custom-feedback" class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: 33.3333%;"></div>
+                    <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" ></div></div>
                   </div>
                 </div>
                 <div class="form-feedback">
